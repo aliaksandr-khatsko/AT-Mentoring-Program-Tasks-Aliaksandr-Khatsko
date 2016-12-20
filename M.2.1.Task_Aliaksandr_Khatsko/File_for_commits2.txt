@@ -1,2 +1,2 @@
 File for commits number 2
-Commit to dev branch
+Second commit to dev branch task6
