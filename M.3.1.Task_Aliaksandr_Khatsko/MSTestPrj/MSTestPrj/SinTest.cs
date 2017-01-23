@@ -17,12 +17,6 @@ namespace MSTestPrj
             Assert.AreEqual(0, calc.Sin(input), "Sin function works incorrect");
         }
 
-        [TestCleanup]
-        public void CleanUp1()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
-
         [TestMethod]
         [Owner("Aliaksandr Khatsko")]
         public void TestSinNegNum()
@@ -30,12 +24,6 @@ namespace MSTestPrj
             var calc = new Calculator();
             double input = -(Math.PI);
             Assert.AreEqual(0, calc.Sin(input), "Sin function works incorrect");
-        }
-
-        [TestCleanup]
-        public void CleanUp2()
-        {
-            Console.WriteLine("Test CleanUp");
         }
 
         [TestMethod]
@@ -46,12 +34,6 @@ namespace MSTestPrj
             var calc = new Calculator();
             string input1 = "test1";
             calc.Sin(input1);
-        }
-
-        [TestCleanup]
-        public void CleanUp3()
-        {
-            Console.WriteLine("Test CleanUp");
         }
     }
 }

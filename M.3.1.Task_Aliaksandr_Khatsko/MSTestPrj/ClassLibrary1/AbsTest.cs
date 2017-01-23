@@ -4,6 +4,7 @@ using NUnit.Framework;
 
 namespace NUnitPrj
 {
+    [TestFixture]
     class AbsTest:BaseClass
     {
         [Test]
@@ -14,24 +15,12 @@ namespace NUnitPrj
             Assert.AreEqual(100.01, calc.Abs(100.01), "Absolute method works incorrect for positve numbers");
         }
 
-        [TearDown]
-        public void CleanUpTest1()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
-
         [Test]
         [Author("Aliaksandr Khatsko")]
         public void TestAbsNegNum()
         {
             var calc = new Calculator();
             Assert.AreEqual(100.01, calc.Abs(-100.01), "Absolute method works incorrect for positve numbers");
-        }
-
-        [TearDown]
-        public void CleanUpTest2()
-        {
-            Console.WriteLine("Test CleanUp");
         }
 
         [Test]
@@ -43,12 +32,6 @@ namespace NUnitPrj
             Assert.Throws<NotFiniteNumberException>(() => calc.Abs(input1), "Wrong input");
         }
 
-        [TearDown]
-        public void CleanUpTest3()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
-
         [Test]
         [Author("Aliaksandr Khatsko")]
         public void TestAbsStrNum()
@@ -58,10 +41,5 @@ namespace NUnitPrj
             Assert.AreEqual(100.01, calc.Abs(input1), "Absolute method works incorrect for string numbers");
         }
 
-        [TearDown]
-        public void CleanUpTest4()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
     }
 }

@@ -17,12 +17,6 @@ namespace MSTestPrj
             Assert.AreEqual(-1, calc.Cos(input), "Cos function works incorrect");
         }
 
-        [TestCleanup]
-        public void CleanUp1()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
-
         [TestMethod]
         [Owner("Aliaksandr Khatsko")]
         public void TestCosNegNum()
@@ -30,12 +24,6 @@ namespace MSTestPrj
             var calc = new Calculator();
             double input = -(Math.PI);
             Assert.AreEqual(-1, calc.Cos(input), "Cos function works incorrect");
-        }
-
-        [TestCleanup]
-        public void CleanUp2()
-        {
-            Console.WriteLine("Test CleanUp");
         }
 
         [TestMethod]
@@ -48,12 +36,6 @@ namespace MSTestPrj
             calc.Cos(input1);
         }
 
-        [TestCleanup]
-        public void CleanUp3()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
-
         [TestMethod]
         [Owner("Aliaksandr Khatsko")]
         public void TestCosNumStrng()
@@ -64,10 +46,5 @@ namespace MSTestPrj
             Assert.AreEqual(expectedResut, calc.Cos(input1), "Cos function works incorrect");
         }
 
-        [TestCleanup]
-        public void CleanUp4()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
     }
 }

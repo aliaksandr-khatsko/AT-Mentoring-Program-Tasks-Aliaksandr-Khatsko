@@ -4,6 +4,7 @@ using NUnit.Framework;
 
 namespace NUnitPrj
 {
+    [TestFixture]
     class IsNegative:BaseClass
     {
         [Test]
@@ -15,12 +16,6 @@ namespace NUnitPrj
             Assert.AreEqual(false, calc.isNegative(input), "isNegative function works incorrect");
         }
 
-        [TearDown]
-        public void CleanUpTest1()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
-
         [Test]
         [Author("Aliaksandr Khatsko")]
         public void TestIsNegativePosNum()
@@ -29,24 +24,12 @@ namespace NUnitPrj
             Assert.AreEqual(false, calc.isNegative(0.1), "isNegative function works incorrect");
         }
 
-        [TearDown]
-        public void CleanUpTest2()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
-
         [Test]
         [Author("Aliaksandr Khatsko")]
         public void TestIsNegativeNegNum()
         {
             var calc = new Calculator();
             Assert.AreEqual(true, calc.isNegative(-0.1), "isNegative function works incorrect");
-        }
-
-        [TearDown]
-        public void CleanUpTest3()
-        {
-            Console.WriteLine("Test CleanUp");
         }
 
         [Test]
@@ -58,12 +41,6 @@ namespace NUnitPrj
             Assert.Throws<NotFiniteNumberException>(() => calc.isNegative(input1), "Wrong input");
         }
 
-        [TearDown]
-        public void CleanUpTest4()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
-
         [Test]
         [Author("Aliaksandr Khatsko")]
         public void TestIsNegativeStringNum()
@@ -73,10 +50,5 @@ namespace NUnitPrj
             Assert.AreEqual(true, calc.isNegative(input1), "IsNegative function works incorrect");
         }
 
-        [TearDown]
-        public void CleanUpTest5()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
     }
 }

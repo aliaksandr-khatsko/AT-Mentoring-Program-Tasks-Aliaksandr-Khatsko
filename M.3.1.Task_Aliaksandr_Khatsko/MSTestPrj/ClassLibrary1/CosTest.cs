@@ -4,6 +4,7 @@ using NUnit.Framework;
 
 namespace NUnitPrj
 {
+    [TestFixture]
     class CosTest:BaseClass
     {
         [Test]
@@ -15,12 +16,6 @@ namespace NUnitPrj
             Assert.AreEqual(-1, calc.Cos(input), "Cos function works incorrect");
         }
 
-        [TearDown]
-        public void CleanUpTest1()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
-
         [Test]
         [Author("Aliaksandr Khatsko")]
         public void TestCosNegNum()
@@ -30,12 +25,6 @@ namespace NUnitPrj
             Assert.AreEqual(-1, calc.Cos(input), "Cos function works incorrect");
         }
 
-        [TearDown]
-        public void CleanUpTest2()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
-
         [Test]
         [Author("Aliaksandr Khatsko")]
         public void TestCosStr()
@@ -43,12 +32,6 @@ namespace NUnitPrj
             var calc = new Calculator();
             string input1 = "test3";
             Assert.Throws<NotFiniteNumberException>(() => calc.Cos(input1), "Wrong input");
-        }
-
-        [TearDown]
-        public void CleanUpTest3()
-        {
-            Console.WriteLine("Test CleanUp");
         }
 
         [Test]
@@ -61,10 +44,5 @@ namespace NUnitPrj
             Assert.AreEqual(expectedResut, calc.Cos(input1), "Cos function works incorrect");
         }
 
-        [TearDown]
-        public void CleanUpTest4()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
     }
 }

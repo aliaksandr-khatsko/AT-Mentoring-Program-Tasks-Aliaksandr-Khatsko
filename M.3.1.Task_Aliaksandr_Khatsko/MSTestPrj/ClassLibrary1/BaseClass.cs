@@ -3,6 +3,7 @@ using NUnit.Framework;
 
 namespace NUnitPrj
 {
+    [TestFixture]
     public class BaseClass
     {
         [SetUp]
@@ -10,5 +11,12 @@ namespace NUnitPrj
         {
             Console.WriteLine("Test Initialization");
         }
+
+        [TearDown]
+        public void TestCleanup()
+        {
+            Console.WriteLine("CleanUp");
+        }
+
     }
 }

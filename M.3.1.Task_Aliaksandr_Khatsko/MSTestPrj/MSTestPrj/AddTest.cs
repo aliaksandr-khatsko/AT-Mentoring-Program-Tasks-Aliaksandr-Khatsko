@@ -16,24 +16,12 @@ namespace MSTestPrj
             Assert.AreEqual(4.5, calc.Add(2.25, 2.25), "Adding of 2 positive numbers works incorrect");
         }
 
-        [TestCleanup]
-        public void CleanUp1()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
-
         [TestMethod]
         [Owner("Aliaksandr Khatsko")]
         public void TestAddPosNegDoubleNum()
         {
             var calc = new Calculator();
             Assert.AreEqual(0, calc.Add(-2.25, 2.25), "Adding of positive and numbers works incorrect");
-        }
-
-        [TestCleanup]
-        public void CleanUp2()
-        {
-            Console.WriteLine("Test CleanUp");
         }
 
         [TestMethod]
@@ -44,25 +32,12 @@ namespace MSTestPrj
             Assert.AreEqual(-4.5, calc.Add(-2.25, -2.25), "Adding of 2 negative numbers works incorrect");
         }
 
-        [TestCleanup]
-        public void CleanUp3()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
-
-
         [TestMethod]
         [Owner("Aliaksandr Khatsko")]
         public void TestAddCorrectStrPos()
         {
             var calc = new Calculator();
             Assert.AreEqual(4.5, calc.Add("2.25", "2.25"), "Adding of 2 string numbers works incorrect");
-        }
-
-        [TestCleanup]
-        public void CleanUp4()
-        {
-            Console.WriteLine("Test CleanUp");
         }
 
         [TestMethod]
@@ -74,12 +49,6 @@ namespace MSTestPrj
             string input1 = "test1";
             string input2 = "test2";
             calc.Add(input1, input2);
-        }
-
-        [TestCleanup]
-        public void CleanUp5()
-        {
-            Console.WriteLine("Test CleanUp");
         }
 
      }

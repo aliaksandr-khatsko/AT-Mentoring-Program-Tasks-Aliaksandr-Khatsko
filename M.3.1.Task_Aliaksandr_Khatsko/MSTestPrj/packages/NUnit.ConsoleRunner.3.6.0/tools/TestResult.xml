@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-run id="2" testcasecount="47" result="Failed" total="47" passed="31" failed="16" inconclusive="0" skipped="0" asserts="43" engine-version="3.6.0.0" clr-version="4.0.30319.42000" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.802586">
+<test-run id="2" testcasecount="47" result="Failed" total="47" passed="32" failed="15" inconclusive="0" skipped="0" asserts="43" engine-version="3.6.0.0" clr-version="4.0.30319.42000" start-time="2017-01-23 19:50:07Z" end-time="2017-01-23 19:50:08Z" duration="0.713916">
   <command-line><![CDATA[nunit3-console.exe  D:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\bin\Debug\NUnitPrj.dll]]></command-line>
-  <test-suite type="Assembly" id="0-1058" name="NUnitPrj.dll" fullname="D:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\bin\Debug\NUnitPrj.dll" runstate="Runnable" testcasecount="47" result="Failed" site="Child" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.206450" total="47" passed="31" failed="16" warnings="0" inconclusive="0" skipped="0" asserts="43">
+  <test-suite type="Assembly" id="0-1059" name="NUnitPrj.dll" fullname="D:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\bin\Debug\NUnitPrj.dll" runstate="Runnable" testcasecount="47" result="Failed" site="Child" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.198449" total="47" passed="32" failed="15" warnings="0" inconclusive="0" skipped="0" asserts="43">
     <environment framework-version="3.6.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="D:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\packages\NUnit.ConsoleRunner.3.6.0\tools" machine-name="ALIAKSANDRR" user="Aliaksandr" user-domain="Aliaksandrr" culture="en-US" uiculture="en-US" os-architecture="x64" />
     <settings>
       <setting name="DisposeRunners" value="True" />
@@ -13,21 +13,21 @@
       <setting name="NumberOfTestWorkers" value="4" />
     </settings>
     <properties>
-      <property name="_PID" value="1800" />
+      <property name="_PID" value="1384" />
       <property name="_APPDOMAIN" value="domain-" />
     </properties>
     <failure>
       <message><![CDATA[One or more child tests had errors]]></message>
     </failure>
-    <test-suite type="TestSuite" id="0-1059" name="NUnitPrj" fullname="NUnitPrj" runstate="Runnable" testcasecount="47" result="Failed" site="Child" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.191014" total="47" passed="31" failed="16" warnings="0" inconclusive="0" skipped="0" asserts="43">
+    <test-suite type="TestSuite" id="0-1060" name="NUnitPrj" fullname="NUnitPrj" runstate="Runnable" testcasecount="47" result="Failed" site="Child" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.183018" total="47" passed="32" failed="15" warnings="0" inconclusive="0" skipped="0" asserts="43">
       <failure>
         <message><![CDATA[One or more child tests had errors]]></message>
       </failure>
-      <test-suite type="TestFixture" id="0-1000" name="AbsTest" fullname="NUnitPrj.AbsTest" classname="NUnitPrj.AbsTest" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.067931" total="4" passed="1" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="3">
+      <test-suite type="TestFixture" id="0-1001" name="AbsTest" fullname="NUnitPrj.AbsTest" classname="NUnitPrj.AbsTest" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.057188" total="4" passed="1" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="3">
         <failure>
           <message><![CDATA[One or more child tests had errors]]></message>
         </failure>
-        <test-case id="0-1002" name="TestAbsNegNum" fullname="NUnitPrj.AbsTest.TestAbsNegNum" methodname="TestAbsNegNum" classname="NUnitPrj.AbsTest" runstate="Runnable" seed="497008656" result="Failed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.044797" asserts="1">
+        <test-case id="0-1003" name="TestAbsNegNum" fullname="NUnitPrj.AbsTest.TestAbsNegNum" methodname="TestAbsNegNum" classname="NUnitPrj.AbsTest" runstate="Runnable" seed="509021867" result="Failed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.035728" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
@@ -36,11 +36,11 @@
   Expected: 100.01000000000001d
   But was:  100.0d
 ]]></message>
-            <stack-trace><![CDATA[at NUnitPrj.AbsTest.TestAbsNegNum() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\AbsTest.cs:line 22
+            <stack-trace><![CDATA[at NUnitPrj.AbsTest.TestAbsNegNum() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\AbsTest.cs:line 23
 ]]></stack-trace>
           </failure>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
           <assertions>
             <assertion result="Failed">
@@ -48,12 +48,12 @@ Test CleanUp
   Expected: 100.01000000000001d
   But was:  100.0d
 ]]></message>
-              <stack-trace><![CDATA[at NUnitPrj.AbsTest.TestAbsNegNum() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\AbsTest.cs:line 22
+              <stack-trace><![CDATA[at NUnitPrj.AbsTest.TestAbsNegNum() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\AbsTest.cs:line 23
 ]]></stack-trace>
             </assertion>
           </assertions>
         </test-case>
-        <test-case id="0-1001" name="TestAbsPosNum" fullname="NUnitPrj.AbsTest.TestAbsPosNum" methodname="TestAbsPosNum" classname="NUnitPrj.AbsTest" runstate="Runnable" seed="675242898" result="Failed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000779" asserts="1">
+        <test-case id="0-1002" name="TestAbsPosNum" fullname="NUnitPrj.AbsTest.TestAbsPosNum" methodname="TestAbsPosNum" classname="NUnitPrj.AbsTest" runstate="Runnable" seed="1555757999" result="Failed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000748" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
@@ -62,11 +62,11 @@ Test CleanUp
   Expected: 100.01000000000001d
   But was:  100.0d
 ]]></message>
-            <stack-trace><![CDATA[at NUnitPrj.AbsTest.TestAbsPosNum() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\AbsTest.cs:line 14
+            <stack-trace><![CDATA[at NUnitPrj.AbsTest.TestAbsPosNum() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\AbsTest.cs:line 15
 ]]></stack-trace>
           </failure>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
           <assertions>
             <assertion result="Failed">
@@ -74,75 +74,75 @@ Test CleanUp
   Expected: 100.01000000000001d
   But was:  100.0d
 ]]></message>
-              <stack-trace><![CDATA[at NUnitPrj.AbsTest.TestAbsPosNum() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\AbsTest.cs:line 14
+              <stack-trace><![CDATA[at NUnitPrj.AbsTest.TestAbsPosNum() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\AbsTest.cs:line 15
 ]]></stack-trace>
             </assertion>
           </assertions>
         </test-case>
-        <test-case id="0-1003" name="TestAbsStr" fullname="NUnitPrj.AbsTest.TestAbsStr" methodname="TestAbsStr" classname="NUnitPrj.AbsTest" runstate="Runnable" seed="1048759083" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.004438" asserts="1">
+        <test-case id="0-1004" name="TestAbsStr" fullname="NUnitPrj.AbsTest.TestAbsStr" methodname="TestAbsStr" classname="NUnitPrj.AbsTest" runstate="Runnable" seed="2004162976" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.004091" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1004" name="TestAbsStrNum" fullname="NUnitPrj.AbsTest.TestAbsStrNum" methodname="TestAbsStrNum" classname="NUnitPrj.AbsTest" runstate="Runnable" seed="11866501" result="Failed" label="Error" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.003758" asserts="0">
+        <test-case id="0-1005" name="TestAbsStrNum" fullname="NUnitPrj.AbsTest.TestAbsStrNum" methodname="TestAbsStrNum" classname="NUnitPrj.AbsTest" runstate="Runnable" seed="138657853" result="Failed" label="Error" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.003169" asserts="0">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <failure>
             <message><![CDATA[System.NotFiniteNumberException : Wrong input]]></message>
             <stack-trace><![CDATA[   at CSharpCalculator.Calculator.Abs(Object a)
-   at NUnitPrj.AbsTest.TestAbsStrNum() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\AbsTest.cs:line 40]]></stack-trace>
+   at NUnitPrj.AbsTest.TestAbsStrNum() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\AbsTest.cs:line 41]]></stack-trace>
           </failure>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
       </test-suite>
-      <test-suite type="TestFixture" id="0-1005" name="AddTest" fullname="NUnitPrj.AddTest" classname="NUnitPrj.AddTest" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.012020" total="5" passed="3" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="4">
+      <test-suite type="TestFixture" id="0-1006" name="AddTest" fullname="NUnitPrj.AddTest" classname="NUnitPrj.AddTest" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.013022" total="5" passed="3" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="4">
         <failure>
           <message><![CDATA[One or more child tests had errors]]></message>
         </failure>
-        <test-case id="0-1009" name="TestAddCorrectStrPos" fullname="NUnitPrj.AddTest.TestAddCorrectStrPos" methodname="TestAddCorrectStrPos" classname="NUnitPrj.AddTest" runstate="Runnable" seed="1166045385" result="Failed" label="Error" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.001668" asserts="0">
+        <test-case id="0-1010" name="TestAddCorrectStrPos" fullname="NUnitPrj.AddTest.TestAddCorrectStrPos" methodname="TestAddCorrectStrPos" classname="NUnitPrj.AddTest" runstate="Runnable" seed="1016045795" result="Failed" label="Error" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.001045" asserts="0">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <failure>
             <message><![CDATA[System.InvalidCastException : Specified cast is not valid.]]></message>
             <stack-trace><![CDATA[   at CSharpCalculator.Calculator.Add(Object a, Object b)
-   at NUnitPrj.AddTest.TestAddCorrectStrPos() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\AddTest.cs:line 39]]></stack-trace>
+   at NUnitPrj.AddTest.TestAddCorrectStrPos() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\AddTest.cs:line 39]]></stack-trace>
           </failure>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1008" name="TestAddNegDoubleNum" fullname="NUnitPrj.AddTest.TestAddNegDoubleNum" methodname="TestAddNegDoubleNum" classname="NUnitPrj.AddTest" runstate="Runnable" seed="1086911973" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000282" asserts="1">
+        <test-case id="0-1009" name="TestAddNegDoubleNum" fullname="NUnitPrj.AddTest.TestAddNegDoubleNum" methodname="TestAddNegDoubleNum" classname="NUnitPrj.AddTest" runstate="Runnable" seed="1731601732" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000279" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1006" name="TestAddPositiveDoubleNum" fullname="NUnitPrj.AddTest.TestAddPositiveDoubleNum" methodname="TestAddPositiveDoubleNum" classname="NUnitPrj.AddTest" runstate="Runnable" seed="1844025317" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000250" asserts="1">
+        <test-case id="0-1007" name="TestAddPositiveDoubleNum" fullname="NUnitPrj.AddTest.TestAddPositiveDoubleNum" methodname="TestAddPositiveDoubleNum" classname="NUnitPrj.AddTest" runstate="Runnable" seed="282503231" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000225" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1007" name="TestAddPosNegDoubleNum" fullname="NUnitPrj.AddTest.TestAddPosNegDoubleNum" methodname="TestAddPosNegDoubleNum" classname="NUnitPrj.AddTest" runstate="Runnable" seed="84086782" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000740" asserts="1">
+        <test-case id="0-1008" name="TestAddPosNegDoubleNum" fullname="NUnitPrj.AddTest.TestAddPosNegDoubleNum" methodname="TestAddPosNegDoubleNum" classname="NUnitPrj.AddTest" runstate="Runnable" seed="810612879" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000726" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1010" name="TestAddStr" fullname="NUnitPrj.AddTest.TestAddStr" methodname="TestAddStr" classname="NUnitPrj.AddTest" runstate="Runnable" seed="315607970" result="Failed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.001822" asserts="1">
+        <test-case id="0-1011" name="TestAddStr" fullname="NUnitPrj.AddTest.TestAddStr" methodname="TestAddStr" classname="NUnitPrj.AddTest" runstate="Runnable" seed="1346398408" result="Failed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.002044" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
@@ -151,14 +151,14 @@ Test CleanUp
   Expected: <System.NotFiniteNumberException>
   But was:  <System.InvalidCastException: Specified cast is not valid.
    at CSharpCalculator.Calculator.Add(Object a, Object b)
-   at NUnitPrj.AddTest.<>c__DisplayClass1.<TestAddStr>b__0() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\AddTest.cs:line 49
+   at NUnitPrj.AddTest.<>c__DisplayClass1.<TestAddStr>b__0() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\AddTest.cs:line 49
    at NUnit.Framework.Assert.Throws(IResolveConstraint expression, TestDelegate code, String message, Object[] args)>
 ]]></message>
-            <stack-trace><![CDATA[at NUnitPrj.AddTest.TestAddStr() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\AddTest.cs:line 49
+            <stack-trace><![CDATA[at NUnitPrj.AddTest.TestAddStr() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\AddTest.cs:line 49
 ]]></stack-trace>
           </failure>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
           <assertions>
             <assertion result="Failed">
@@ -166,54 +166,55 @@ Test CleanUp
   Expected: <System.NotFiniteNumberException>
   But was:  <System.InvalidCastException: Specified cast is not valid.
    at CSharpCalculator.Calculator.Add(Object a, Object b)
-   at NUnitPrj.AddTest.<>c__DisplayClass1.<TestAddStr>b__0() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\AddTest.cs:line 49
+   at NUnitPrj.AddTest.<>c__DisplayClass1.<TestAddStr>b__0() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\AddTest.cs:line 49
    at NUnit.Framework.Assert.Throws(IResolveConstraint expression, TestDelegate code, String message, Object[] args)>
 ]]></message>
-              <stack-trace><![CDATA[at NUnitPrj.AddTest.TestAddStr() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\AddTest.cs:line 49
+              <stack-trace><![CDATA[at NUnitPrj.AddTest.TestAddStr() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\AddTest.cs:line 49
 ]]></stack-trace>
             </assertion>
           </assertions>
         </test-case>
       </test-suite>
-      <test-suite type="TestFixture" id="0-1011" name="CosTest" fullname="NUnitPrj.CosTest" classname="NUnitPrj.CosTest" runstate="Runnable" testcasecount="4" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.008036" total="4" passed="4" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
-        <test-case id="0-1013" name="TestCosNegNum" fullname="NUnitPrj.CosTest.TestCosNegNum" methodname="TestCosNegNum" classname="NUnitPrj.CosTest" runstate="Runnable" seed="671505266" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000460" asserts="1">
+      <test-suite type="TestFixture" id="0-1000" name="BaseClass" fullname="NUnitPrj.BaseClass" classname="NUnitPrj.BaseClass" runstate="Runnable" testcasecount="0" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000085" total="0" passed="0" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0" />
+      <test-suite type="TestFixture" id="0-1012" name="CosTest" fullname="NUnitPrj.CosTest" classname="NUnitPrj.CosTest" runstate="Runnable" testcasecount="4" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.007979" total="4" passed="4" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
+        <test-case id="0-1014" name="TestCosNegNum" fullname="NUnitPrj.CosTest.TestCosNegNum" methodname="TestCosNegNum" classname="NUnitPrj.CosTest" runstate="Runnable" seed="1026694465" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000428" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1015" name="TestCosNumStrng" fullname="NUnitPrj.CosTest.TestCosNumStrng" methodname="TestCosNumStrng" classname="NUnitPrj.CosTest" runstate="Runnable" seed="494254157" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000311" asserts="1">
+        <test-case id="0-1016" name="TestCosNumStrng" fullname="NUnitPrj.CosTest.TestCosNumStrng" methodname="TestCosNumStrng" classname="NUnitPrj.CosTest" runstate="Runnable" seed="995412460" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000225" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1012" name="TestCosPosNum" fullname="NUnitPrj.CosTest.TestCosPosNum" methodname="TestCosPosNum" classname="NUnitPrj.CosTest" runstate="Runnable" seed="1063966272" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000217" asserts="1">
+        <test-case id="0-1013" name="TestCosPosNum" fullname="NUnitPrj.CosTest.TestCosPosNum" methodname="TestCosPosNum" classname="NUnitPrj.CosTest" runstate="Runnable" seed="404967091" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000230" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1014" name="TestCosStr" fullname="NUnitPrj.CosTest.TestCosStr" methodname="TestCosStr" classname="NUnitPrj.CosTest" runstate="Runnable" seed="1615387499" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000766" asserts="1">
+        <test-case id="0-1015" name="TestCosStr" fullname="NUnitPrj.CosTest.TestCosStr" methodname="TestCosStr" classname="NUnitPrj.CosTest" runstate="Runnable" seed="628817494" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000513" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
       </test-suite>
-      <test-suite type="TestFixture" id="0-1016" name="DivideTest" fullname="NUnitPrj.DivideTest" classname="NUnitPrj.DivideTest" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.010991" total="4" passed="3" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="4">
+      <test-suite type="TestFixture" id="0-1017" name="DivideTest" fullname="NUnitPrj.DivideTest" classname="NUnitPrj.DivideTest" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.010002" total="4" passed="3" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="4">
         <failure>
           <message><![CDATA[One or more child tests had errors]]></message>
         </failure>
-        <test-case id="0-1020" name="TestDivideByZero" fullname="NUnitPrj.DivideTest.TestDivideByZero" methodname="TestDivideByZero" classname="NUnitPrj.DivideTest" runstate="Runnable" seed="1370404039" result="Failed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.001503" asserts="1">
+        <test-case id="0-1021" name="TestDivideByZero" fullname="NUnitPrj.DivideTest.TestDivideByZero" methodname="TestDivideByZero" classname="NUnitPrj.DivideTest" runstate="Runnable" seed="351854991" result="Failed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.001332" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
@@ -222,11 +223,11 @@ Test CleanUp
   Expected: <System.DivideByZeroException>
   But was:  null
 ]]></message>
-            <stack-trace><![CDATA[at NUnitPrj.DivideTest.TestDivideByZero() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\DivideTest.cs:line 39
+            <stack-trace><![CDATA[at NUnitPrj.DivideTest.TestDivideByZero() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\DivideTest.cs:line 41
 ]]></stack-trace>
           </failure>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
           <assertions>
             <assertion result="Failed">
@@ -234,73 +235,73 @@ Test CleanUp
   Expected: <System.DivideByZeroException>
   But was:  null
 ]]></message>
-              <stack-trace><![CDATA[at NUnitPrj.DivideTest.TestDivideByZero() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\DivideTest.cs:line 39
+              <stack-trace><![CDATA[at NUnitPrj.DivideTest.TestDivideByZero() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\DivideTest.cs:line 41
 ]]></stack-trace>
             </assertion>
           </assertions>
         </test-case>
-        <test-case id="0-1019" name="TestDivNegNum" fullname="NUnitPrj.DivideTest.TestDivNegNum" methodname="TestDivNegNum" classname="NUnitPrj.DivideTest" runstate="Runnable" seed="309693090" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000240" asserts="1">
+        <test-case id="0-1020" name="TestDivNegNum" fullname="NUnitPrj.DivideTest.TestDivNegNum" methodname="TestDivNegNum" classname="NUnitPrj.DivideTest" runstate="Runnable" seed="400229080" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000291" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1017" name="TestDivPositiveNum" fullname="NUnitPrj.DivideTest.TestDivPositiveNum" methodname="TestDivPositiveNum" classname="NUnitPrj.DivideTest" runstate="Runnable" seed="1506548079" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000209" asserts="1">
+        <test-case id="0-1018" name="TestDivPositiveNum" fullname="NUnitPrj.DivideTest.TestDivPositiveNum" methodname="TestDivPositiveNum" classname="NUnitPrj.DivideTest" runstate="Runnable" seed="157257019" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000230" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1018" name="TestDivPosNegNum" fullname="NUnitPrj.DivideTest.TestDivPosNegNum" methodname="TestDivPosNegNum" classname="NUnitPrj.DivideTest" runstate="Runnable" seed="257253873" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000240" asserts="1">
+        <test-case id="0-1019" name="TestDivPosNegNum" fullname="NUnitPrj.DivideTest.TestDivPosNegNum" methodname="TestDivPosNegNum" classname="NUnitPrj.DivideTest" runstate="Runnable" seed="337015681" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000207" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
       </test-suite>
-      <test-suite type="TestFixture" id="0-1021" name="IsNegative" fullname="NUnitPrj.IsNegative" classname="NUnitPrj.IsNegative" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.012022" total="5" passed="4" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="5">
+      <test-suite type="TestFixture" id="0-1022" name="IsNegative" fullname="NUnitPrj.IsNegative" classname="NUnitPrj.IsNegative" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.013018" total="5" passed="4" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="5">
         <failure>
           <message><![CDATA[One or more child tests had errors]]></message>
         </failure>
-        <test-case id="0-1024" name="TestIsNegativeNegNum" fullname="NUnitPrj.IsNegative.TestIsNegativeNegNum" methodname="TestIsNegativeNegNum" classname="NUnitPrj.IsNegative" runstate="Runnable" seed="1886925740" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.001897" asserts="1">
+        <test-case id="0-1025" name="TestIsNegativeNegNum" fullname="NUnitPrj.IsNegative.TestIsNegativeNegNum" methodname="TestIsNegativeNegNum" classname="NUnitPrj.IsNegative" runstate="Runnable" seed="514896137" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.002178" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1023" name="TestIsNegativePosNum" fullname="NUnitPrj.IsNegative.TestIsNegativePosNum" methodname="TestIsNegativePosNum" classname="NUnitPrj.IsNegative" runstate="Runnable" seed="334876752" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000423" asserts="1">
+        <test-case id="0-1024" name="TestIsNegativePosNum" fullname="NUnitPrj.IsNegative.TestIsNegativePosNum" methodname="TestIsNegativePosNum" classname="NUnitPrj.IsNegative" runstate="Runnable" seed="1343513960" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000295" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1025" name="TestIsNegativeStr" fullname="NUnitPrj.IsNegative.TestIsNegativeStr" methodname="TestIsNegativeStr" classname="NUnitPrj.IsNegative" runstate="Runnable" seed="1535524939" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000683" asserts="1">
+        <test-case id="0-1026" name="TestIsNegativeStr" fullname="NUnitPrj.IsNegative.TestIsNegativeStr" methodname="TestIsNegativeStr" classname="NUnitPrj.IsNegative" runstate="Runnable" seed="1580228881" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000604" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1026" name="TestIsNegativeStringNum" fullname="NUnitPrj.IsNegative.TestIsNegativeStringNum" methodname="TestIsNegativeStringNum" classname="NUnitPrj.IsNegative" runstate="Runnable" seed="961911495" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000242" asserts="1">
+        <test-case id="0-1027" name="TestIsNegativeStringNum" fullname="NUnitPrj.IsNegative.TestIsNegativeStringNum" methodname="TestIsNegativeStringNum" classname="NUnitPrj.IsNegative" runstate="Runnable" seed="693871778" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000229" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1022" name="TestIsNegativeZero" fullname="NUnitPrj.IsNegative.TestIsNegativeZero" methodname="TestIsNegativeZero" classname="NUnitPrj.IsNegative" runstate="Runnable" seed="226026869" result="Failed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.001433" asserts="1">
+        <test-case id="0-1023" name="TestIsNegativeZero" fullname="NUnitPrj.IsNegative.TestIsNegativeZero" methodname="TestIsNegativeZero" classname="NUnitPrj.IsNegative" runstate="Runnable" seed="1437131686" result="Failed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000996" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
@@ -309,11 +310,11 @@ Test CleanUp
   Expected: False
   But was:  True
 ]]></message>
-            <stack-trace><![CDATA[at NUnitPrj.IsNegative.TestIsNegativeZero() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\IsNegative.cs:line 15
+            <stack-trace><![CDATA[at NUnitPrj.IsNegative.TestIsNegativeZero() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\IsNegative.cs:line 16
 ]]></stack-trace>
           </failure>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
           <assertions>
             <assertion result="Failed">
@@ -321,132 +322,132 @@ Test CleanUp
   Expected: False
   But was:  True
 ]]></message>
-              <stack-trace><![CDATA[at NUnitPrj.IsNegative.TestIsNegativeZero() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\IsNegative.cs:line 15
+              <stack-trace><![CDATA[at NUnitPrj.IsNegative.TestIsNegativeZero() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\IsNegative.cs:line 16
 ]]></stack-trace>
             </assertion>
           </assertions>
         </test-case>
       </test-suite>
-      <test-suite type="TestFixture" id="0-1027" name="IsPositive" fullname="NUnitPrj.IsPositive" classname="NUnitPrj.IsPositive" runstate="Runnable" testcasecount="5" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.011057" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
-        <test-case id="0-1030" name="TestIsPositiveNegNum" fullname="NUnitPrj.IsPositive.TestIsPositiveNegNum" methodname="TestIsPositiveNegNum" classname="NUnitPrj.IsPositive" runstate="Runnable" seed="1490193542" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.001042" asserts="1">
+      <test-suite type="TestFixture" id="0-1028" name="IsPositive" fullname="NUnitPrj.IsPositive" classname="NUnitPrj.IsPositive" runstate="Runnable" testcasecount="5" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.011010" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+        <test-case id="0-1031" name="TestIsPositiveNegNum" fullname="NUnitPrj.IsPositive.TestIsPositiveNegNum" methodname="TestIsPositiveNegNum" classname="NUnitPrj.IsPositive" runstate="Runnable" seed="1836558049" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000458" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1029" name="TestIsPositivePosNum" fullname="NUnitPrj.IsPositive.TestIsPositivePosNum" methodname="TestIsPositivePosNum" classname="NUnitPrj.IsPositive" runstate="Runnable" seed="313102445" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000352" asserts="1">
+        <test-case id="0-1030" name="TestIsPositivePosNum" fullname="NUnitPrj.IsPositive.TestIsPositivePosNum" methodname="TestIsPositivePosNum" classname="NUnitPrj.IsPositive" runstate="Runnable" seed="38577284" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000232" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1031" name="TestIsPositiveStr" fullname="NUnitPrj.IsPositive.TestIsPositiveStr" methodname="TestIsPositiveStr" classname="NUnitPrj.IsPositive" runstate="Runnable" seed="1128822159" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000540" asserts="1">
+        <test-case id="0-1032" name="TestIsPositiveStr" fullname="NUnitPrj.IsPositive.TestIsPositiveStr" methodname="TestIsPositiveStr" classname="NUnitPrj.IsPositive" runstate="Runnable" seed="1813319040" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000537" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1032" name="TestIsPositiveStringNum" fullname="NUnitPrj.IsPositive.TestIsPositiveStringNum" methodname="TestIsPositiveStringNum" classname="NUnitPrj.IsPositive" runstate="Runnable" seed="1426827265" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000192" asserts="1">
+        <test-case id="0-1033" name="TestIsPositiveStringNum" fullname="NUnitPrj.IsPositive.TestIsPositiveStringNum" methodname="TestIsPositiveStringNum" classname="NUnitPrj.IsPositive" runstate="Runnable" seed="668660271" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000226" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1028" name="TestIsPositiveZero" fullname="NUnitPrj.IsPositive.TestIsPositiveZero" methodname="TestIsPositiveZero" classname="NUnitPrj.IsPositive" runstate="Runnable" seed="1962130350" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000269" asserts="1">
+        <test-case id="0-1029" name="TestIsPositiveZero" fullname="NUnitPrj.IsPositive.TestIsPositiveZero" methodname="TestIsPositiveZero" classname="NUnitPrj.IsPositive" runstate="Runnable" seed="1627546956" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.001086" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
-]]></output>
-        </test-case>
-      </test-suite>
-      <test-suite type="TestFixture" id="0-1033" name="MultiplyTest" fullname="NUnitPrj.MultiplyTest" classname="NUnitPrj.MultiplyTest" runstate="Runnable" testcasecount="3" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.005993" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
-        <test-case id="0-1036" name="TestMultiplyNegNum" fullname="NUnitPrj.MultiplyTest.TestMultiplyNegNum" methodname="TestMultiplyNegNum" classname="NUnitPrj.MultiplyTest" runstate="Runnable" seed="1573902921" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000238" asserts="1">
-          <properties>
-            <property name="Author" value="Aliaksandr Khatsko" />
-          </properties>
-          <output><![CDATA[Test Initialization
-Test CleanUp
-]]></output>
-        </test-case>
-        <test-case id="0-1034" name="TestMultiplyPositiveNum" fullname="NUnitPrj.MultiplyTest.TestMultiplyPositiveNum" methodname="TestMultiplyPositiveNum" classname="NUnitPrj.MultiplyTest" runstate="Runnable" seed="1296788568" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000288" asserts="1">
-          <properties>
-            <property name="Author" value="Aliaksandr Khatsko" />
-          </properties>
-          <output><![CDATA[Test Initialization
-Test CleanUp
-]]></output>
-        </test-case>
-        <test-case id="0-1035" name="TestMultiplyPosNegNum" fullname="NUnitPrj.MultiplyTest.TestMultiplyPosNegNum" methodname="TestMultiplyPosNegNum" classname="NUnitPrj.MultiplyTest" runstate="Runnable" seed="751180536" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000222" asserts="1">
-          <properties>
-            <property name="Author" value="Aliaksandr Khatsko" />
-          </properties>
-          <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
       </test-suite>
-      <test-suite type="TestFixture" id="0-1037" name="PowTest" fullname="NUnitPrj.PowTest" classname="NUnitPrj.PowTest" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.008030" total="4" passed="2" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="2">
+      <test-suite type="TestFixture" id="0-1034" name="MultiplyTest" fullname="NUnitPrj.MultiplyTest" classname="NUnitPrj.MultiplyTest" runstate="Runnable" testcasecount="3" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.006010" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+        <test-case id="0-1037" name="TestMultiplyNegNum" fullname="NUnitPrj.MultiplyTest.TestMultiplyNegNum" methodname="TestMultiplyNegNum" classname="NUnitPrj.MultiplyTest" runstate="Runnable" seed="1217578759" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000352" asserts="1">
+          <properties>
+            <property name="Author" value="Aliaksandr Khatsko" />
+          </properties>
+          <output><![CDATA[Test Initialization
+CleanUp
+]]></output>
+        </test-case>
+        <test-case id="0-1035" name="TestMultiplyPositiveNum" fullname="NUnitPrj.MultiplyTest.TestMultiplyPositiveNum" methodname="TestMultiplyPositiveNum" classname="NUnitPrj.MultiplyTest" runstate="Runnable" seed="1381715090" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000235" asserts="1">
+          <properties>
+            <property name="Author" value="Aliaksandr Khatsko" />
+          </properties>
+          <output><![CDATA[Test Initialization
+CleanUp
+]]></output>
+        </test-case>
+        <test-case id="0-1036" name="TestMultiplyPosNegNum" fullname="NUnitPrj.MultiplyTest.TestMultiplyPosNegNum" methodname="TestMultiplyPosNegNum" classname="NUnitPrj.MultiplyTest" runstate="Runnable" seed="379595745" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000214" asserts="1">
+          <properties>
+            <property name="Author" value="Aliaksandr Khatsko" />
+          </properties>
+          <output><![CDATA[Test Initialization
+CleanUp
+]]></output>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1038" name="PowTest" fullname="NUnitPrj.PowTest" classname="NUnitPrj.PowTest" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.009008" total="4" passed="2" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="2">
         <failure>
           <message><![CDATA[One or more child tests had errors]]></message>
         </failure>
-        <test-case id="0-1039" name="TestPowDoubleNum" fullname="NUnitPrj.PowTest.TestPowDoubleNum" methodname="TestPowDoubleNum" classname="NUnitPrj.PowTest" runstate="Runnable" seed="872733331" result="Failed" label="Error" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000969" asserts="0">
+        <test-case id="0-1040" name="TestPowDoubleNum" fullname="NUnitPrj.PowTest.TestPowDoubleNum" methodname="TestPowDoubleNum" classname="NUnitPrj.PowTest" runstate="Runnable" seed="717048575" result="Failed" label="Error" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.001546" asserts="0">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <failure>
             <message><![CDATA[System.NotFiniteNumberException : Wrong input]]></message>
             <stack-trace><![CDATA[   at CSharpCalculator.Calculator.Pow(Object a, Object b)
-   at NUnitPrj.PowTest.TestPowDoubleNum() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\PowTest.cs:line 22]]></stack-trace>
+   at NUnitPrj.PowTest.TestPowDoubleNum() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\PowTest.cs:line 23]]></stack-trace>
           </failure>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1038" name="TestPowIntNum" fullname="NUnitPrj.PowTest.TestPowIntNum" methodname="TestPowIntNum" classname="NUnitPrj.PowTest" runstate="Runnable" seed="1502659941" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000285" asserts="1">
+        <test-case id="0-1039" name="TestPowIntNum" fullname="NUnitPrj.PowTest.TestPowIntNum" methodname="TestPowIntNum" classname="NUnitPrj.PowTest" runstate="Runnable" seed="1369180276" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000274" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1040" name="TestPowStr" fullname="NUnitPrj.PowTest.TestPowStr" methodname="TestPowStr" classname="NUnitPrj.PowTest" runstate="Runnable" seed="413038531" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000480" asserts="1">
+        <test-case id="0-1041" name="TestPowStr" fullname="NUnitPrj.PowTest.TestPowStr" methodname="TestPowStr" classname="NUnitPrj.PowTest" runstate="Runnable" seed="237933634" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000645" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1041" name="TestPowStrNum" fullname="NUnitPrj.PowTest.TestPowStrNum" methodname="TestPowStrNum" classname="NUnitPrj.PowTest" runstate="Runnable" seed="1420585340" result="Failed" label="Error" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000709" asserts="0">
+        <test-case id="0-1042" name="TestPowStrNum" fullname="NUnitPrj.PowTest.TestPowStrNum" methodname="TestPowStrNum" classname="NUnitPrj.PowTest" runstate="Runnable" seed="1326505387" result="Failed" label="Error" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000819" asserts="0">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <failure>
             <message><![CDATA[System.NotFiniteNumberException : Wrong input]]></message>
             <stack-trace><![CDATA[   at CSharpCalculator.Calculator.Pow(Object a, Object b)
-   at NUnitPrj.PowTest.TestPowStrNum() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\PowTest.cs:line 42]]></stack-trace>
+   at NUnitPrj.PowTest.TestPowStrNum() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\PowTest.cs:line 43]]></stack-trace>
           </failure>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
       </test-suite>
-      <test-suite type="TestFixture" id="0-1042" name="SinTest" fullname="NUnitPrj.SinTest" classname="NUnitPrj.SinTest" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.007057" total="3" passed="0" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="3">
+      <test-suite type="TestFixture" id="0-1043" name="SinTest" fullname="NUnitPrj.SinTest" classname="NUnitPrj.SinTest" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.007009" total="3" passed="1" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="3">
         <failure>
           <message><![CDATA[One or more child tests had errors]]></message>
         </failure>
-        <test-case id="0-1044" name="TestSinNegNum" fullname="NUnitPrj.SinTest.TestSinNegNum" methodname="TestSinNegNum" classname="NUnitPrj.SinTest" runstate="Runnable" seed="155217824" result="Failed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.001046" asserts="1">
+        <test-case id="0-1045" name="TestSinNegNum" fullname="NUnitPrj.SinTest.TestSinNegNum" methodname="TestSinNegNum" classname="NUnitPrj.SinTest" runstate="Runnable" seed="1805427412" result="Failed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.001246" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
@@ -455,11 +456,11 @@ Test CleanUp
   Expected: 0
   But was:  -1.2246063538223773E-16d
 ]]></message>
-            <stack-trace><![CDATA[at NUnitPrj.SinTest.TestSinNegNum() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\SinTest.cs:line 24
+            <stack-trace><![CDATA[at NUnitPrj.SinTest.TestSinNegNum() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\SinTest.cs:line 25
 ]]></stack-trace>
           </failure>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
           <assertions>
             <assertion result="Failed">
@@ -467,12 +468,12 @@ Test CleanUp
   Expected: 0
   But was:  -1.2246063538223773E-16d
 ]]></message>
-              <stack-trace><![CDATA[at NUnitPrj.SinTest.TestSinNegNum() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\SinTest.cs:line 24
+              <stack-trace><![CDATA[at NUnitPrj.SinTest.TestSinNegNum() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\SinTest.cs:line 25
 ]]></stack-trace>
             </assertion>
           </assertions>
         </test-case>
-        <test-case id="0-1043" name="TestSinPosNum" fullname="NUnitPrj.SinTest.TestSinPosNum" methodname="TestSinPosNum" classname="NUnitPrj.SinTest" runstate="Runnable" seed="646266205" result="Failed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000773" asserts="1">
+        <test-case id="0-1044" name="TestSinPosNum" fullname="NUnitPrj.SinTest.TestSinPosNum" methodname="TestSinPosNum" classname="NUnitPrj.SinTest" runstate="Runnable" seed="101119912" result="Failed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000951" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
@@ -481,11 +482,11 @@ Test CleanUp
   Expected: 0
   But was:  1.2246063538223773E-16d
 ]]></message>
-            <stack-trace><![CDATA[at NUnitPrj.SinTest.TestSinPosNum() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\SinTest.cs:line 15
+            <stack-trace><![CDATA[at NUnitPrj.SinTest.TestSinPosNum() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\SinTest.cs:line 16
 ]]></stack-trace>
           </failure>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
           <assertions>
             <assertion result="Failed">
@@ -493,43 +494,25 @@ Test CleanUp
   Expected: 0
   But was:  1.2246063538223773E-16d
 ]]></message>
-              <stack-trace><![CDATA[at NUnitPrj.SinTest.TestSinPosNum() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\SinTest.cs:line 15
+              <stack-trace><![CDATA[at NUnitPrj.SinTest.TestSinPosNum() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\SinTest.cs:line 16
 ]]></stack-trace>
             </assertion>
           </assertions>
         </test-case>
-        <test-case id="0-1045" name="TestSinStr" fullname="NUnitPrj.SinTest.TestSinStr" methodname="TestSinStr" classname="NUnitPrj.SinTest" runstate="Runnable" seed="57863557" result="Failed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000804" asserts="1">
+        <test-case id="0-1046" name="TestSinStr" fullname="NUnitPrj.SinTest.TestSinStr" methodname="TestSinStr" classname="NUnitPrj.SinTest" runstate="Runnable" seed="1218577085" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000501" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
-          <failure>
-            <message><![CDATA[  Wrong input
-  Expected: <System.NotFiniteNumberException>
-  But was:  null
-]]></message>
-            <stack-trace><![CDATA[at NUnitPrj.SinTest.TestSinStr() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\SinTest.cs:line 33
-]]></stack-trace>
-          </failure>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
-          <assertions>
-            <assertion result="Failed">
-              <message><![CDATA[  Wrong input
-  Expected: <System.NotFiniteNumberException>
-  But was:  null
-]]></message>
-              <stack-trace><![CDATA[at NUnitPrj.SinTest.TestSinStr() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\SinTest.cs:line 33
-]]></stack-trace>
-            </assertion>
-          </assertions>
         </test-case>
       </test-suite>
-      <test-suite type="TestFixture" id="0-1046" name="SquareTest" fullname="NUnitPrj.SquareTest" classname="NUnitPrj.SquareTest" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.010982" total="5" passed="1" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="5">
+      <test-suite type="TestFixture" id="0-1047" name="SquareTest" fullname="NUnitPrj.SquareTest" classname="NUnitPrj.SquareTest" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.011023" total="5" passed="1" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="5">
         <failure>
           <message><![CDATA[One or more child tests had errors]]></message>
         </failure>
-        <test-case id="0-1049" name="TestSquareNegNum" fullname="NUnitPrj.SquareTest.TestSquareNegNum" methodname="TestSquareNegNum" classname="NUnitPrj.SquareTest" runstate="Runnable" seed="546539698" result="Failed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000727" asserts="1">
+        <test-case id="0-1050" name="TestSquareNegNum" fullname="NUnitPrj.SquareTest.TestSquareNegNum" methodname="TestSquareNegNum" classname="NUnitPrj.SquareTest" runstate="Runnable" seed="1215885576" result="Failed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000897" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
@@ -538,11 +521,11 @@ Test CleanUp
   Expected: 4
   But was:  NaN
 ]]></message>
-            <stack-trace><![CDATA[at NUnitPrj.SquareTest.TestSquareNegNum() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\SquareTest.cs:line 31
+            <stack-trace><![CDATA[at NUnitPrj.SquareTest.TestSquareNegNum() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\SquareTest.cs:line 32
 ]]></stack-trace>
           </failure>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
           <assertions>
             <assertion result="Failed">
@@ -550,12 +533,12 @@ Test CleanUp
   Expected: 4
   But was:  NaN
 ]]></message>
-              <stack-trace><![CDATA[at NUnitPrj.SquareTest.TestSquareNegNum() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\SquareTest.cs:line 31
+              <stack-trace><![CDATA[at NUnitPrj.SquareTest.TestSquareNegNum() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\SquareTest.cs:line 32
 ]]></stack-trace>
             </assertion>
           </assertions>
         </test-case>
-        <test-case id="0-1047" name="TestSquarePositiveNum" fullname="NUnitPrj.SquareTest.TestSquarePositiveNum" methodname="TestSquarePositiveNum" classname="NUnitPrj.SquareTest" runstate="Runnable" seed="679618835" result="Failed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000768" asserts="1">
+        <test-case id="0-1048" name="TestSquarePositiveNum" fullname="NUnitPrj.SquareTest.TestSquarePositiveNum" methodname="TestSquarePositiveNum" classname="NUnitPrj.SquareTest" runstate="Runnable" seed="1711902021" result="Failed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000850" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
@@ -564,11 +547,11 @@ Test CleanUp
   Expected: 4
   But was:  1.4142135623730951d
 ]]></message>
-            <stack-trace><![CDATA[at NUnitPrj.SquareTest.TestSquarePositiveNum() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\SquareTest.cs:line 14
+            <stack-trace><![CDATA[at NUnitPrj.SquareTest.TestSquarePositiveNum() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\SquareTest.cs:line 15
 ]]></stack-trace>
           </failure>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
           <assertions>
             <assertion result="Failed">
@@ -576,12 +559,12 @@ Test CleanUp
   Expected: 4
   But was:  1.4142135623730951d
 ]]></message>
-              <stack-trace><![CDATA[at NUnitPrj.SquareTest.TestSquarePositiveNum() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\SquareTest.cs:line 14
+              <stack-trace><![CDATA[at NUnitPrj.SquareTest.TestSquarePositiveNum() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\SquareTest.cs:line 15
 ]]></stack-trace>
             </assertion>
           </assertions>
         </test-case>
-        <test-case id="0-1050" name="TestSquareStr" fullname="NUnitPrj.SquareTest.TestSquareStr" methodname="TestSquareStr" classname="NUnitPrj.SquareTest" runstate="Runnable" seed="1983137481" result="Failed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.001656" asserts="1">
+        <test-case id="0-1051" name="TestSquareStr" fullname="NUnitPrj.SquareTest.TestSquareStr" methodname="TestSquareStr" classname="NUnitPrj.SquareTest" runstate="Runnable" seed="555893355" result="Failed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.001226" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
@@ -593,14 +576,14 @@ Test CleanUp
    at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
    at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
    at CSharpCalculator.Calculator.Sqrt(Object a)
-   at NUnitPrj.SquareTest.<>c__DisplayClass1.<TestSquareStr>b__0() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\SquareTest.cs:line 40
+   at NUnitPrj.SquareTest.<>c__DisplayClass1.<TestSquareStr>b__0() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\SquareTest.cs:line 41
    at NUnit.Framework.Assert.Throws(IResolveConstraint expression, TestDelegate code, String message, Object[] args)>
 ]]></message>
-            <stack-trace><![CDATA[at NUnitPrj.SquareTest.TestSquareStr() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\SquareTest.cs:line 40
+            <stack-trace><![CDATA[at NUnitPrj.SquareTest.TestSquareStr() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\SquareTest.cs:line 41
 ]]></stack-trace>
           </failure>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
           <assertions>
             <assertion result="Failed">
@@ -611,15 +594,15 @@ Test CleanUp
    at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
    at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
    at CSharpCalculator.Calculator.Sqrt(Object a)
-   at NUnitPrj.SquareTest.<>c__DisplayClass1.<TestSquareStr>b__0() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\SquareTest.cs:line 40
+   at NUnitPrj.SquareTest.<>c__DisplayClass1.<TestSquareStr>b__0() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\SquareTest.cs:line 41
    at NUnit.Framework.Assert.Throws(IResolveConstraint expression, TestDelegate code, String message, Object[] args)>
 ]]></message>
-              <stack-trace><![CDATA[at NUnitPrj.SquareTest.TestSquareStr() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\SquareTest.cs:line 40
+              <stack-trace><![CDATA[at NUnitPrj.SquareTest.TestSquareStr() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\SquareTest.cs:line 41
 ]]></stack-trace>
             </assertion>
           </assertions>
         </test-case>
-        <test-case id="0-1051" name="TestSquareStrNum" fullname="NUnitPrj.SquareTest.TestSquareStrNum" methodname="TestSquareStrNum" classname="NUnitPrj.SquareTest" runstate="Runnable" seed="720468377" result="Failed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000743" asserts="1">
+        <test-case id="0-1052" name="TestSquareStrNum" fullname="NUnitPrj.SquareTest.TestSquareStrNum" methodname="TestSquareStrNum" classname="NUnitPrj.SquareTest" runstate="Runnable" seed="612685904" result="Failed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000813" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
@@ -628,11 +611,11 @@ Test CleanUp
   Expected: 4
   But was:  1.4142135623730951d
 ]]></message>
-            <stack-trace><![CDATA[at NUnitPrj.SquareTest.TestSquareStrNum() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\SquareTest.cs:line 49
+            <stack-trace><![CDATA[at NUnitPrj.SquareTest.TestSquareStrNum() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\SquareTest.cs:line 50
 ]]></stack-trace>
           </failure>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
           <assertions>
             <assertion result="Failed">
@@ -640,59 +623,54 @@ Test CleanUp
   Expected: 4
   But was:  1.4142135623730951d
 ]]></message>
-              <stack-trace><![CDATA[at NUnitPrj.SquareTest.TestSquareStrNum() in c:\Users\Aliaksandr\Documents\Visual Studio 2013\Projects\MSTestPrj\ClassLibrary1\SquareTest.cs:line 49
+              <stack-trace><![CDATA[at NUnitPrj.SquareTest.TestSquareStrNum() in d:\ATMentoring_Tasks_Repositories\Task4\MSTestPrj\ClassLibrary1\SquareTest.cs:line 50
 ]]></stack-trace>
             </assertion>
           </assertions>
         </test-case>
-        <test-case id="0-1048" name="TestSquareZero" fullname="NUnitPrj.SquareTest.TestSquareZero" methodname="TestSquareZero" classname="NUnitPrj.SquareTest" runstate="Runnable" seed="103198616" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000247" asserts="1">
+        <test-case id="0-1049" name="TestSquareZero" fullname="NUnitPrj.SquareTest.TestSquareZero" methodname="TestSquareZero" classname="NUnitPrj.SquareTest" runstate="Runnable" seed="1365861793" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000234" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
+CleanUp
 ]]></output>
         </test-case>
       </test-suite>
-      <test-suite type="TestFixture" id="0-1052" name="SubTest" fullname="NUnitPrj.SubTest" classname="NUnitPrj.SubTest" runstate="Runnable" testcasecount="5" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.010038" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
-        <test-case id="0-1055" name="TestSubNegNum" fullname="NUnitPrj.SubTest.TestSubNegNum" methodname="TestSubNegNum" classname="NUnitPrj.SubTest" runstate="Runnable" seed="783049049" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000386" asserts="1">
+      <test-suite type="TestFixture" id="0-1053" name="SubTest" fullname="NUnitPrj.SubTest" classname="NUnitPrj.SubTest" runstate="Runnable" testcasecount="5" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.010003" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+        <test-case id="0-1056" name="TestSubNegNum" fullname="NUnitPrj.SubTest.TestSubNegNum" methodname="TestSubNegNum" classname="NUnitPrj.SubTest" runstate="Runnable" seed="1058067036" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000348" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1054" name="TestSubPosNegNum" fullname="NUnitPrj.SubTest.TestSubPosNegNum" methodname="TestSubPosNegNum" classname="NUnitPrj.SubTest" runstate="Runnable" seed="1830228256" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000286" asserts="1">
+        <test-case id="0-1055" name="TestSubPosNegNum" fullname="NUnitPrj.SubTest.TestSubPosNegNum" methodname="TestSubPosNegNum" classname="NUnitPrj.SubTest" runstate="Runnable" seed="1123348410" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000215" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1053" name="TestSubPosNum" fullname="NUnitPrj.SubTest.TestSubPosNum" methodname="TestSubPosNum" classname="NUnitPrj.SubTest" runstate="Runnable" seed="32510870" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000417" asserts="1">
+        <test-case id="0-1054" name="TestSubPosNum" fullname="NUnitPrj.SubTest.TestSubPosNum" methodname="TestSubPosNum" classname="NUnitPrj.SubTest" runstate="Runnable" seed="2099680319" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000226" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1056" name="TestSubStr" fullname="NUnitPrj.SubTest.TestSubStr" methodname="TestSubStr" classname="NUnitPrj.SubTest" runstate="Runnable" seed="313486126" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000581" asserts="1">
+        <test-case id="0-1057" name="TestSubStr" fullname="NUnitPrj.SubTest.TestSubStr" methodname="TestSubStr" classname="NUnitPrj.SubTest" runstate="Runnable" seed="1766437991" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000455" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
 ]]></output>
         </test-case>
-        <test-case id="0-1057" name="TestSubStrNum" fullname="NUnitPrj.SubTest.TestSubStrNum" methodname="TestSubStrNum" classname="NUnitPrj.SubTest" runstate="Runnable" seed="1218350298" result="Passed" start-time="2017-01-23 17:08:43Z" end-time="2017-01-23 17:08:43Z" duration="0.000210" asserts="1">
+        <test-case id="0-1058" name="TestSubStrNum" fullname="NUnitPrj.SubTest.TestSubStrNum" methodname="TestSubStrNum" classname="NUnitPrj.SubTest" runstate="Runnable" seed="1500551942" result="Passed" start-time="2017-01-23 19:50:08Z" end-time="2017-01-23 19:50:08Z" duration="0.000210" asserts="1">
           <properties>
             <property name="Author" value="Aliaksandr Khatsko" />
           </properties>
           <output><![CDATA[Test Initialization
-Test CleanUp
 ]]></output>
         </test-case>
       </test-suite>

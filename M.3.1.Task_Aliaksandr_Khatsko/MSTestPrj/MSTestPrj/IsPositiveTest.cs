@@ -16,12 +16,6 @@ namespace MSTestPrj
             Assert.AreEqual(false, calc.isPositive(0), "IsPositive function works incorrect");
         }
 
-        [TestCleanup]
-        public void CleanUp1()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
-
         [TestMethod]
         [Owner("Aliaksandr Khatsko")]
         public void TestIsPositivePosNum()
@@ -30,24 +24,12 @@ namespace MSTestPrj
             Assert.AreEqual(true, calc.isPositive(0.1), "IsPositive function works incorrect");
         }
 
-        [TestCleanup]
-        public void CleanUp2()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
-
         [TestMethod]
         [Owner("Aliaksandr Khatsko")]
         public void TestIsPositiveNegNum()
         {
             var calc = new Calculator();
             Assert.AreEqual(false, calc.isPositive(-0.1), "IsPositive function works incorrect");
-        }
-
-        [TestCleanup]
-        public void CleanUp3()
-        {
-            Console.WriteLine("Test CleanUp");
         }
 
         [TestMethod]
@@ -60,12 +42,6 @@ namespace MSTestPrj
             calc.isPositive(input1);
         }
 
-        [TestCleanup]
-        public void CleanUp4()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
-
         [TestMethod]
         [Owner("Aliaksandr Khatsko")]
         public void TestIsPositiveStringNum()
@@ -75,10 +51,5 @@ namespace MSTestPrj
             Assert.AreEqual(true, calc.isPositive(input1), "IsPositive function works incorrect");
         }
 
-        [TestCleanup]
-        public void CleanUp5()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
     }
 }

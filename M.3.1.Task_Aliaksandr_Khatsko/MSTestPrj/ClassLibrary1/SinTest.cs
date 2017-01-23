@@ -4,6 +4,7 @@ using NUnit.Framework;
 
 namespace NUnitPrj
 {
+    [TestFixture]
     class SinTest:BaseClass
     {
         [Test]
@@ -15,12 +16,6 @@ namespace NUnitPrj
             Assert.AreEqual(0, calc.Sin(input), "Sin function works incorrect");
         }
 
-        [TearDown]
-        public void CleanUpTest1()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
-
         [Test]
         [Author("Aliaksandr Khatsko")]
         public void TestSinNegNum()
@@ -28,12 +23,6 @@ namespace NUnitPrj
             var calc = new Calculator();
             double input = -(Math.PI);
             Assert.AreEqual(0, calc.Sin(input), "Sin function works incorrect");
-        }
-
-        [TearDown]
-        public void CleanUpTest2()
-        {
-            Console.WriteLine("Test CleanUp");
         }
 
         [Test]
@@ -45,10 +34,5 @@ namespace NUnitPrj
             Assert.Throws<NotFiniteNumberException>(() => calc.Sin(input1), "Wrong input");
         }
 
-        [TearDown]
-        public void CleanUpTest3()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
     }
 }

@@ -16,24 +16,12 @@ namespace MSTestPrj
             Assert.AreEqual(100.01, calc.Abs(100.01), "Absolute method works incorrect for positve numbers");
         }
 
-        [TestCleanup]
-        public void CleanUp1()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
-
         [TestMethod]
         [Owner("Aliaksandr Khatsko")]
         public void TestAbsNegNum()
         {
             var calc = new Calculator();
             Assert.AreEqual(100.01, calc.Abs(-100.01), "Absolute method works incorrect for positve numbers");
-        }
-
-        [TestCleanup]
-        public void CleanUp2()
-        {
-            Console.WriteLine("Test CleanUp");
         }
 
         [TestMethod]
@@ -46,12 +34,6 @@ namespace MSTestPrj
             calc.Abs(input1);
         }
 
-        [TestCleanup]
-        public void CleanUp3()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
-
         [TestMethod]
         [Owner("Aliaksandr Khatsko")]
         public void TestAbsStrNum()
@@ -61,10 +43,5 @@ namespace MSTestPrj
             Assert.AreEqual(100.01, calc.Abs(input1), "Absolute method works incorrect for string numbers");
         }
 
-        [TestCleanup]
-        public void CleanUp4()
-        {
-            Console.WriteLine("Test CleanUp");
-        }
     }
 }

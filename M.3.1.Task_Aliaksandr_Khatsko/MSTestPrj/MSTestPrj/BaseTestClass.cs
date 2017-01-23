@@ -12,6 +12,12 @@ namespace MSTestPrj
         {
             Console.WriteLine("Test Initialization");
         }
+        
+        [TestCleanup]
+        public void TestCleanup()
+        {
+            Console.WriteLine("CleanUp");
+        }
 
     }
 }
