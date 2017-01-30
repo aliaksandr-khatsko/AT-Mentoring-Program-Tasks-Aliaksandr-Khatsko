@@ -64,19 +64,18 @@
 <tr>
 	<td>echo</td>
 	<td>${convertedString}</td>
-	<td>viewsNumber</td>
+	<td></td>
 </tr>
 <tr>
-	<td>storeEval</td>
-	<td>var s = false; s = eval(storedVars['viewsNumber'] &gt;=50000000);</td>
-	<td>storedResult</td>
+	<td>store</td>
+	<td>50000000</td>
+	<td>A</td>
 </tr>
 <tr>
 	<td>assertEval</td>
-	<td>storedVars['storedResult'] == true</td>
+	<td>storedVars['convertedString']&gt;storedVars['A']</td>
 	<td>true</td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

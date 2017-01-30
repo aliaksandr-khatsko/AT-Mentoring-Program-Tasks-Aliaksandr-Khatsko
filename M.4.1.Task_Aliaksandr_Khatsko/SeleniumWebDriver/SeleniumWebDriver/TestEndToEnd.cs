@@ -89,6 +89,8 @@ namespace SeleniumWebDriver
                 Assert.AreEqual(true, driver.FindElement(By.XPath(ConfirmationPageLocators.completedOrderText_XPath)).Text.Contains("Completed"));
                 Assert.AreEqual(true, driver.FindElement(By.XPath(ConfirmationPageLocators.downloadNowLink_XPath)).Displayed);
             });
+
+            driver.Close();
         }
 
     }
