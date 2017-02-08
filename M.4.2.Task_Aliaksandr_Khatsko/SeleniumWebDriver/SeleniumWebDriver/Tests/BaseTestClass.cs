@@ -14,12 +14,15 @@ namespace SeleniumWebDriver
     public class BaseTestClass
     {
         public static IWebDriver driver;
+        public static WebDriverWait wait;
 
-        //[OneTimeSetUp]
-        //public static void SetUpTestRun()
-        //{
-        //    driver = BasePage.GetDriverInstance;
-        //}
+        [OneTimeSetUp]
+        public static void SetUpTestRun()
+        {
+            driver = BaseFactories.GetDriverInstance;
+            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
+            wait = BaseFactories.GetWaitInstance;
+        }
 
         [SetUp]
         public static void SetUpTest()
@@ -31,6 +34,12 @@ namespace SeleniumWebDriver
         public static void TearDownTest()
         {
             Console.WriteLine("Test TearDown");
+        }
+
+        [OneTimeTearDown]
+        public static void TearDownTests()
+        {
+            driver.Close();
         }
                
     }

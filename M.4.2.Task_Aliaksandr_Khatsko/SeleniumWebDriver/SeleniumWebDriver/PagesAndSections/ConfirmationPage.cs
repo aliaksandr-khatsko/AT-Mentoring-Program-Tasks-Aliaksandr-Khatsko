@@ -12,8 +12,8 @@ namespace SeleniumWebDriver
     public class ConfirmationPage:BasePage
     {
         //Ititialize page
-        public ConfirmationPage(IWebDriver driver)
-            : base(driver)
+        public ConfirmationPage(IWebDriver driver, WebDriverWait wait)
+            : base(driver, wait)
         {
                 
         }

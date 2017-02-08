@@ -13,8 +13,8 @@ namespace SeleniumWebDriver
     public class HomePage:BasePage
     {
         //Ititialize page
-        public HomePage(IWebDriver driver)
-            : base(driver)
+        public HomePage(IWebDriver driver, WebDriverWait wait)
+            : base(driver, wait)
         {
                 
         }

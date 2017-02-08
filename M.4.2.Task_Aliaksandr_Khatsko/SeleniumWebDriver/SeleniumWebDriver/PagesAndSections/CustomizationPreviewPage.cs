@@ -13,8 +13,8 @@ namespace SeleniumWebDriver
     public class CustomizationPreviewPage:BasePage
     {
         //Ititialize page
-        public CustomizationPreviewPage(IWebDriver driver)
-            : base(driver)
+        public CustomizationPreviewPage(IWebDriver driver, WebDriverWait wait)
+            : base(driver, wait)
         {
                 
         }
@@ -25,9 +25,8 @@ namespace SeleniumWebDriver
 
         public CustomizationOrderDetailsPage AcceptCustomizationPreview()
         {
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
             AcceptCustomizationPreviewBtn.Click();
-            return new CustomizationOrderDetailsPage(driver);
+            return new CustomizationOrderDetailsPage(driver, wait);
         }
 
     }

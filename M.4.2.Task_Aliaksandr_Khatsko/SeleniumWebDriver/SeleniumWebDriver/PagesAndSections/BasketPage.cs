@@ -13,7 +13,8 @@ namespace SeleniumWebDriver
     public class BasketPage:BasePage
     {
         //Ititialize page
-        public BasketPage(IWebDriver driver) : base(driver)
+        public BasketPage(IWebDriver driver, WebDriverWait wait)
+            : base(driver, wait)
         {
                 
         }
@@ -28,9 +29,8 @@ namespace SeleniumWebDriver
 
         public ConfirmationPage PlaceOrderLink()
         {
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
             FirstOrderLink.Click();
-            return new ConfirmationPage(driver);
+            return new ConfirmationPage(driver, wait);
         }
     }
 }

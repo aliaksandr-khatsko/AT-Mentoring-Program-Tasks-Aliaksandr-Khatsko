@@ -14,8 +14,8 @@ namespace SeleniumWebDriver
     public class CustomizationPage:BasePage
     {
         //Ititialize page
-        public CustomizationPage(IWebDriver driver)
-            : base(driver)
+        public CustomizationPage(IWebDriver driver, WebDriverWait wait)
+            : base(driver, wait)
         {
                 
         }
@@ -28,10 +28,10 @@ namespace SeleniumWebDriver
         public IWebElement NextBtn { get; set; }
 
 
-        public void ClickNextBtn()
+        public CustomizationPreviewPage ClickNextBtn()
         {
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
             NextBtn.Click();
+            return new CustomizationPreviewPage(driver, wait);
         }
 
         

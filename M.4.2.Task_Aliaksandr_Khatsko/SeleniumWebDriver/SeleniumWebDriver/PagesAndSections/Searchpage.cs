@@ -13,8 +13,8 @@ namespace SeleniumWebDriver
     public class SearchPage:BasePage
     {
         //Ititialize page
-        public SearchPage(IWebDriver driver)
-            : base(driver)
+        public SearchPage(IWebDriver driver, WebDriverWait wait)
+            : base(driver, wait)
         {
                 
         }
@@ -48,16 +48,14 @@ namespace SeleniumWebDriver
 
         public void SearhItem()
         {
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
             SearchField.SendKeys(SearchKeys);
             SearchButton.Click();
         }
 
         public CustomizationPage CustomizeOrder()
         {
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
             TestCustomizableBtn.Click();
-            return new CustomizationPage(driver);
+            return new CustomizationPage(driver, wait);
         }
 
     }

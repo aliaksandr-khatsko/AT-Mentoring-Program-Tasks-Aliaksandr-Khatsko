@@ -14,8 +14,8 @@ namespace SeleniumWebDriver
     {
 
         //Ititialize page
-        public DynamicWidgetMenu(IWebDriver driver)
-            : base(driver)
+        public DynamicWidgetMenu(IWebDriver driver, WebDriverWait wait)
+            : base(driver, wait)
         {
                 
         }
@@ -27,9 +27,8 @@ namespace SeleniumWebDriver
 
         public SearchPage OpenSearchPage()
         {
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
             SearchMenuItem.Click();
-            return new SearchPage(driver);
+            return new SearchPage(driver, wait);
         }
         
     }

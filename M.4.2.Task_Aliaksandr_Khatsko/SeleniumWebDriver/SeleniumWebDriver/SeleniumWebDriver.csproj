@@ -50,6 +50,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseFactories.cs" />
     <Compile Include="BasePage.cs" />
     <Compile Include="PagesAndSections\ConfirmationPage.cs" />
     <Compile Include="PagesAndSections\DynamicWidgetMenu.cs" />

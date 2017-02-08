@@ -13,8 +13,8 @@ namespace SeleniumWebDriver
     public class LogInPage:BasePage
     {
         //Ititialize page
-        public LogInPage(IWebDriver driver)
-            : base(driver)
+        public LogInPage(IWebDriver driver, WebDriverWait wait)
+            : base(driver, wait)
         {
                 
         }
@@ -40,12 +40,11 @@ namespace SeleniumWebDriver
 
         public HomePage OpenHomePage()
         {
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
             CompanyId.SendKeys(LogInDetails.CompanyID);
             UserId.SendKeys(LogInDetails.UserID);
             PasswordId.SendKeys(LogInDetails.Password);
             LoginBtn.Click();
-            return new HomePage(driver);
+            return new HomePage(driver, wait);
         }
 
     }

@@ -14,8 +14,8 @@ namespace SeleniumWebDriver
     {
 
         //Ititialize page
-        public CustomizationOrderDetailsPage(IWebDriver driver)
-            : base(driver)
+        public CustomizationOrderDetailsPage(IWebDriver driver, WebDriverWait wait)
+            : base(driver, wait)
         {
                 
         }
@@ -29,16 +29,14 @@ namespace SeleniumWebDriver
 
         public void FillInRef(string sendKey)
         {
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
             RefField.Clear();
             RefField.SendKeys(sendKey);
         }
 
         public BasketPage SaveCustomization()
         {
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
             SaveOrderDetailsBtn.Click();
-            return new BasketPage(driver);
+            return new BasketPage(driver, wait);
         }
 
     }
