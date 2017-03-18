@@ -8,7 +8,7 @@ using TechTalk.SpecFlow;
 namespace BDD_SpecFlow
 {
     [Binding]
-    public class TextFixture:BaseFactories
+    public class TextFixture
     {
         public static IWebDriver driver;
         public static WebDriverWait wait;
@@ -16,9 +16,9 @@ namespace BDD_SpecFlow
         [BeforeScenario]
         public void BeforeScenario()
         {
-            driver = GetDriverInstance;
+            driver = BaseFactories.GetDriverInstance;
             driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
-            wait = GetWaitInstance;
+            wait = BaseFactories.GetWaitInstance;
         }
         
         [AfterScenario]

@@ -7,21 +7,23 @@ using System.Configuration;
 
 namespace BDD_SpecFlow
 {
-    public class BaseFactories
+    public sealed class BaseFactories
     {
         private static IWebDriver driver;
 
         private static WebDriverWait wait;
 
+        private static readonly object syncRoot = new Object();
+
         public static IWebDriver CreateDriver()
         {
-            driver = new ChromeDriver(@"D:\ATMentoring_Tasks_Repositories\Task 5.3\BDD_SpecFlow\packages\Selenium.WebDriver.ChromeDriver.2.28.0\driver\");
+            driver = new ChromeDriver();
             return driver;
         }
 
         public static IWebDriver GetDriverInstance
         {
-            get { return driver ?? CreateDriver(); }
+            get { lock (syncRoot) return driver ?? CreateDriver(); }
             private set { }
         }
 
@@ -33,7 +35,7 @@ namespace BDD_SpecFlow
 
         public static WebDriverWait GetWaitInstance
         {
-            get { return wait ?? CreateDriverWait(); }
+            get { lock (syncRoot) return wait ?? CreateDriverWait(); }
             private set { }
         }
     }

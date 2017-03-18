@@ -57,6 +57,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StepDefinitions\BackGroundSteps.cs" />
+    <Compile Include="StepDefinitions\HomePageSteps.cs" />
+    <Compile Include="StepDefinitions\ItemPageSteps.cs" />
+    <Compile Include="StepDefinitions\CartPageSteps.cs" />
     <Compile Include="Features\AddToCart.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -68,16 +72,20 @@
     <Compile Include="PageObjects\HomePage.cs" />
     <Compile Include="PageObjects\GlobalPage.cs" />
     <Compile Include="PageObjects\SearchResultsPage.cs" />
-    <Compile Include="StepDefinitions\AddToCartFeatureSteps.cs" />
     <Compile Include="BaseClasses\BaseFactories.cs" />
     <Compile Include="BaseClasses\BasePage.cs" />
     <Compile Include="PageObjects\LogInPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BusinessObjects\User.cs" />
     <Compile Include="BaseClasses\TextFixture.cs" />
-    <Compile Include="StepDefinitions\AddToCartFromWatchPageSpecificSteps.cs" />
+    <Compile Include="StepDefinitions\GlobalPageSteps.cs" />
+    <Compile Include="StepDefinitions\LogInPageSteps.cs" />
+    <Compile Include="StepDefinitions\MenuNavigationSteps.cs" />
+    <Compile Include="StepDefinitions\SearchresultsPageSteps.cs" />
+    <Compile Include="StepDefinitions\WatchPageSteps.cs" />
     <Compile Include="Utils\UserConfiguration.cs" />
     <Compile Include="PageObjects\WatchPage.cs" />
+    <Compile Include="Utils\WebElementChecker.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
