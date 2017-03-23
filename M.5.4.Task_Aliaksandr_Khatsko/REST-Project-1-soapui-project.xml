@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="92abd9d4-d6c9-4546-9a28-04808873bafa" activeEnvironment="Default" name="REST GeoIP Service" lastOpened="2017-03-24T01:35:16.427+03:00" resourceRoot="" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="1770c8b0-0f76-49c8-ab8a-d42d0cb53743" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://geoip.elib.ru" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://geoip.elib.ru</con:endpoint></con:endpoints><con:resource name="Cgi-bin" path="/cgi-bin" id="9290c0c3-f36b-4d4a-b842-3626dd8e46bd"><con:settings/><con:parameters/><con:resource name="getdata.pl" path="getdata.pl" id="a006dce5-bded-4201-8fb2-a1c65466fb2e"><con:settings/><con:parameters><con:parameter required="true"><con:name>sid</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description>SID parameter is  an ID which GeoIP provides to specific IPs</con:description></con:parameter><con:parameter><con:name>ip</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description>IP of resource you need to get Geo Location</con:description></con:parameter><con:parameter><con:name>lg</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:option>1</con:option><con:description>Географическя долгота (в градусах)</con:description></con:parameter><con:parameter><con:name>tn</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:option>1</con:option><con:description>Название населенного пункта</con:description></con:parameter><con:parameter><con:name>cn</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:option>1</con:option><con:description>Название государства</con:description></con:parameter><con:parameter><con:name>rg</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:option>1</con:option><con:description>Название региона/области</con:description></con:parameter><con:parameter><con:name>hz</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:option>1</con:option><con:description>Часовой пояс от Гринвича</con:description></con:parameter><con:parameter><con:name>sr</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:option>1</con:option><con:description>Время восхода Солнца (чч:мм:сс)</con:description></con:parameter><con:parameter><con:name>ss</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:option>1</con:option><con:description>Время захода Солнца (чч:мм:сс)</con:description></con:parameter><con:parameter><con:name>tb</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:option>1</con:option><con:description>Время начала гражданских сумерек (чч:мм:сс)</con:description></con:parameter><con:parameter><con:name>te</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:option>1</con:option><con:description>Время окончания гражданских сумерек (чч:мм:сс)</con:description></con:parameter><con:parameter><con:name>nb</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:option>1</con:option><con:description>Время начала навигационных сумерек (чч:мм:сс)</con:description></con:parameter><con:parameter><con:name>ne</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:option>1</con:option><con:description>Время окончания навигационных сумерек (чч:мм:сс)</con:description></con:parameter><con:parameter><con:name>ab</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:option>1</con:option><con:description>Время начала астрономических сумерек (чч:мм:сс)</con:description></con:parameter><con:parameter><con:name>ae</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:option>1</con:option><con:description>Время окончания астрономических сумерек (чч:мм:сс)</con:description></con:parameter><con:parameter><con:name>mr</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:option>1</con:option><con:description>Время восхода Луны (чч:мм:сс)</con:description></con:parameter><con:parameter><con:name>ms</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:option>1</con:option><con:description>Время захода Луны (чч:мм:сс)</con:description></con:parameter><con:parameter><con:name>fm</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:option>1</con:option><con:description>Фаза Луны (четверть)</con:description></con:parameter><con:parameter><con:name>hex</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description>Шеснадцатиричное число которое можно использовать в замену всем опциям(для каждой специфическое)</con:description></con:parameter></con:parameters><con:method name="Get Data  from GeoIP Main Service" id="58e9dcd6-f371-438e-8c00-6adf9d424d56" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html; charset="UTF-8"</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>200</con:status><con:params/><con:element>GeoIP</con:element></con:representation><con:request name="Get Location with SID only" id="bf247203-98d6-4073-b9ca-4edb2a2ebe51" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://geoip.elib.ru</con:endpoint><con:request/><con:originalUri>http://geoip.elib.ru/cgi-bin/getdata.pl6MGT65TA</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="ss" value=""/>
+  <con:entry key="ab" value=""/>
+  <con:entry key="ae" value=""/>
+  <con:entry key="mr" value=""/>
+  <con:entry key="ms" value=""/>
+  <con:entry key="ip" value=""/>
+  <con:entry key="fm" value=""/>
+  <con:entry key="cn" value=""/>
+  <con:entry key="tb" value=""/>
+  <con:entry key="sid" value="6MGT65TA"/>
+  <con:entry key="te" value=""/>
+  <con:entry key="hz" value=""/>
+  <con:entry key="nb" value=""/>
+  <con:entry key="rg" value=""/>
+  <con:entry key="ne" value=""/>
+  <con:entry key="tn" value=""/>
+  <con:entry key="hex" value=""/>
+  <con:entry key="lg" value=""/>
+  <con:entry key="sr" value=""/>
+</con:parameters><con:parameterOrder><con:entry>lg</con:entry><con:entry>tn</con:entry><con:entry>cn</con:entry><con:entry>rg</con:entry><con:entry>hz</con:entry><con:entry>sr</con:entry><con:entry>ss</con:entry><con:entry>tb</con:entry><con:entry>te</con:entry><con:entry>nb</con:entry><con:entry>ip</con:entry><con:entry>sid</con:entry><con:entry>ne</con:entry><con:entry>ab</con:entry><con:entry>ae</con:entry><con:entry>mr</con:entry><con:entry>ms</con:entry><con:entry>fm</con:entry><con:entry>hex</con:entry></con:parameterOrder></con:request><con:request name="Get Location for SID and IP" id="f65a97e2-54ef-4262-bb45-6ebfde72713d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://geoip.elib.ru</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="sid" value="213QE3O5"/>
+  <con:entry key="ip" value="87.117.26.88"/>
+</con:parameters></con:request><con:request name="Get Location for few IPs" id="29870b7b-4c56-4cc4-b7e6-09032216d141" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://geoip.elib.ru</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="ip" value="213.252.105.59,213.252.105.35"/>
+  <con:entry key="sid" value="9CWPV3AR"/>
+</con:parameters></con:request><con:request name="Get Location with additional parameters" id="cd9f817b-e04e-4b7d-ab47-d4e23f6c6457" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://geoip.elib.ru</con:endpoint><con:request/><con:originalUri>http://geoip.elib.ru/cgi-bin/getdata.pl</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="ip" value="46.243.177.41"/>
+  <con:entry key="cn" value="1"/>
+  <con:entry key="sid" value="6MGT65TA"/>
+  <con:entry key="rg" value="1"/>
+  <con:entry key="tn" value="1"/>
+  <con:entry key="lg" value="1"/>
+</con:parameters></con:request></con:method></con:resource><con:resource name="getdata_mini.pl" path="getdata_mini.pl?&amp;" id="a848c798-b333-427a-8be4-93546129af5c"><con:settings/><con:parameters><con:parameter><con:name>sid</con:name><con:value/><con:style>QUERY</con:style><con:default/></con:parameter><con:parameter><con:name>ip</con:name><con:value/><con:style>QUERY</con:style><con:default/></con:parameter></con:parameters><con:method name="Get Data from GeoIP Mini Service" id="db3cfd45-b549-4180-93aa-575766853a29" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>text/plain; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Get Location with SID only" id="031d3851-b87c-4efb-bb0d-642b354e4394" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://geoip.elib.ru</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="ip" value=""/>
+  <con:entry key="sid" value="8R82HAOC"/>
+</con:parameters><con:parameterOrder><con:entry>sid</con:entry><con:entry>ip</con:entry></con:parameterOrder></con:request><con:request name="Get Location for SID and IP" id="57b227cb-8546-430a-83d6-7462733f32c7" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://geoip.elib.ru</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="ip" value="87.117.26.88"/>
+  <con:entry key="sid" value="213QE3O5"/>
+</con:parameters></con:request></con:method></con:resource></con:resource></con:interface><con:testSuite id="a4dd1276-8d36-4358-9f85-60a01fafbced" name="Geo IP Service TestSuite"><con:description>TestSuite generated for REST Service [http://geoip.elib.ru]</con:description><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="740bbc6b-2ec6-4800-bdae-4d969c275ee8" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Get Data from Main Service for current Location (Error 205)" searchProperties="true" timeout="0" maxResults="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Get Data from Main Service for current Location (Error 205)" id="78940f8e-c6d8-482a-acb7-6a5c8b2b1517"><con:settings/><con:config service="http://geoip.elib.ru" resourcePath="/cgi-bin/getdata.pl" methodName="Get Data  from GeoIP Main Service" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Data from Main Service for current Location (Error 205)" id="bf247203-98d6-4073-b9ca-4edb2a2ebe51" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://geoip.elib.ru</con:endpoint><con:request/><con:originalUri>http://geoip.elib.ru/cgi-bin/getdata.pl6MGT65TA</con:originalUri><con:assertion type="GroovyScriptAssertion" id="4d390200-76ae-4c59-b4c3-fbe65148148d" name="Verify error value is 205"><con:configuration><scriptText>def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+
+def holder = groovyUtils.getXmlHolder(messageExchange.responseContent)
+
+def error = holder.getNodeValue("//GeoIP/GeoAddr/Error")
+
+assert error == '205'
+
+
+</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="22a2fbee-f275-4f4b-b906-a4b6a912c8f4" name="Verify status code is 200"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="62fd2229-c22c-4d47-a8fb-d20c806dc014" name="Verify 'Content-Encoding' equals 'gzip' in responce header"><con:configuration><scriptText>String contentEncodingValue = messageExchange.responseHeaders['Content-Encoding']
+
+assert contentEncodingValue == "[gzip]"</scriptText></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="tn" value=""/>
+  <con:entry key="sid" value="213QE3O5"/>
+  <con:entry key="mr" value=""/>
+  <con:entry key="sr" value=""/>
+  <con:entry key="ms" value=""/>
+  <con:entry key="rg" value=""/>
+  <con:entry key="te" value=""/>
+  <con:entry key="fm" value=""/>
+  <con:entry key="hex" value=""/>
+  <con:entry key="nb" value=""/>
+  <con:entry key="tb" value=""/>
+  <con:entry key="cn" value=""/>
+  <con:entry key="lg" value=""/>
+  <con:entry key="ne" value=""/>
+  <con:entry key="hz" value=""/>
+  <con:entry key="ss" value=""/>
+  <con:entry key="ab" value=""/>
+  <con:entry key="ae" value=""/>
+</con:parameters><con:parameterOrder><con:entry>lg</con:entry><con:entry>tn</con:entry><con:entry>cn</con:entry><con:entry>rg</con:entry><con:entry>hz</con:entry><con:entry>sr</con:entry><con:entry>ss</con:entry><con:entry>tb</con:entry><con:entry>te</con:entry><con:entry>nb</con:entry><con:entry>ip</con:entry><con:entry>sid</con:entry><con:entry>ne</con:entry><con:entry>ab</con:entry><con:entry>ae</con:entry><con:entry>mr</con:entry><con:entry>ms</con:entry><con:entry>fm</con:entry><con:entry>hex</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="708e40f0-ca8c-4f90-b18f-138bebb14470" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Get Data from Main Service by Rostov IP" searchProperties="true" timeout="0" maxResults="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Get Data from Main Service by Rostov IP" id="5073e2bd-c66f-4897-be42-bdc4a5e267af"><con:settings/><con:config service="http://geoip.elib.ru" resourcePath="/cgi-bin/getdata.pl" methodName="Get Data  from GeoIP Main Service" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Data from Main Service by Rostov IP" id="f65a97e2-54ef-4262-bb45-6ebfde72713d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Accept-Charset" value="utf-8"/>
+  <con:entry key="Accept-Language" value="en-US,en;q=0.8"/>
+  <con:entry key="Accept-Encoding" value="gzip, deflate, sdch"/>
+  <con:entry key="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"/>
+</xml-fragment>]]></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://geoip.elib.ru</con:endpoint><con:request/><con:originalUri>http://geoip.elib.ru/cgi-bin/getdata.pl</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="fcac93dd-c056-46a5-b99a-b41ac69b7cc7" name="Verify HTTP Status is 200"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="0bd5c08b-b6ad-4cef-9856-bdc3e713aac4" name="Verify the correct content of responce"><con:configuration><scriptText>def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+
+def holder = groovyUtils.getXmlHolder(messageExchange.responseContent)
+
+def town = holder.getNodeValue("//GeoIP/GeoAddr/Town")
+
+def lon = holder.getNodeValue("//GeoIP/GeoAddr/Lon")
+
+def lat = holder.getNodeValue("//GeoIP/GeoAddr/Lat")
+
+assert lon == '39.715'
+assert lat == '47.233189'
+assert town == 'Ростов-на-Дону'
+</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="757554c2-13af-4b9a-893a-2ca00ac4df20" name="Verify 'Content-Encoding' equals 'gzip' in responce header"><con:configuration><scriptText>String contentEncodingValue = messageExchange.responseHeaders['Content-Encoding']
+
+assert contentEncodingValue == "[gzip]"</scriptText></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="ip" value="87.117.26.88 "/>
+  <con:entry key="sid" value="213QE3O5"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="e5add394-55fe-43fb-b3d3-8de43629ef92" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Get Data from Main Service for 2 IPs both are Moskow" searchProperties="true" timeout="0" maxResults="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Get Data from Main Service for 2 IPs both are Moskow" id="ec487ec5-0b1f-41b9-ba62-904e09499a7e"><con:settings/><con:config service="http://geoip.elib.ru" resourcePath="/cgi-bin/getdata.pl" methodName="Get Data  from GeoIP Main Service" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Data from Main Service for 2 IPs both are Moskow" id="29870b7b-4c56-4cc4-b7e6-09032216d141" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://geoip.elib.ru</con:endpoint><con:request/><con:originalUri>http://geoip.elib.ru/cgi-bin/getdata.pl</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="90255069-ff58-4c1c-8584-5f9d18476b69" name="Verify HTTP Status is 200"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="fd4f7903-ba66-4d2e-90c4-62bed36d47e7" name="Verify IPs for the same town return the same content"><con:configuration><scriptText>def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+
+def holder = groovyUtils.getXmlHolder(messageExchange.responseContent)
+
+def town1 = holder.getNodeValue("//GeoAddr[1]/Town")
+def town2 = holder.getNodeValue("//GeoAddr[2]/Town")
+
+def lon1 = holder.getNodeValue("//GeoAddr[1]/Lon")
+def lon2 = holder.getNodeValue("//GeoAddr[2]/Lon")
+
+def lat1 = holder.getNodeValue("//GeoAddr[1]/Lat")
+def lat2 = holder.getNodeValue("//GeoAddr[2]/Lat")
+
+assert town1 == town2
+assert lon1 == lon2
+assert lat1 == lat2</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="87e61279-c79c-4d2c-8c3c-fe28c1a9ed31" name="Verify the correct content of responce"><con:configuration><scriptText>def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+
+def holder = groovyUtils.getXmlHolder(messageExchange.responseContent)
+
+def town = holder.getNodeValue("//GeoIP[1]/GeoAddr/Town")
+
+def lon = holder.getNodeValue("//GeoIP[1]/GeoAddr/Lon")
+
+def lat = holder.getNodeValue("//GeoIP[1]/GeoAddr/Lat")
+
+assert lon == '37.617634'
+assert lat == '55.755787'
+assert town == 'Москва'</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="a915691e-adad-46e8-9f00-e613ae80da87" name="Verify 'Content-Encoding' equals 'gzip' in responce header"><con:configuration><scriptText>String contentEncodingValue = messageExchange.responseHeaders['Content-Encoding']
+
+assert contentEncodingValue == "[gzip]"</scriptText></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="ip" value="213.252.105.59,213.252.105.35"/>
+  <con:entry key="sid" value="9CWPV3AR"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="1afc2af8-cd7d-48e7-b2fa-c0d75fa0defa" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Get Data from Main service for St.Peterburg IP with all parameters" searchProperties="true" timeout="0" maxResults="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Get Data from Main service for St.Peterburg IP with all parameters" id="8ec00c0b-58d3-4c6b-b06c-36c407f9fc9c"><con:settings/><con:config service="http://geoip.elib.ru" resourcePath="/cgi-bin/getdata.pl" methodName="Get Data  from GeoIP Main Service" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Data from Main service for St.Peterburg IP with all parameters" id="cd9f817b-e04e-4b7d-ab47-d4e23f6c6457" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://geoip.elib.ru</con:endpoint><con:request/><con:originalUri>http://geoip.elib.ru/cgi-bin/getdata.pl</con:originalUri><con:assertion type="GroovyScriptAssertion" id="71a3234d-c834-42e1-8dc6-2186495d9eb6" name="Verify 'Content-Encoding' equals 'gzip' in responce header"><con:configuration><scriptText>String contentEncodingValue = messageExchange.responseHeaders['Content-Encoding']
+
+assert contentEncodingValue == "[gzip]"</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="703665e0-f31e-4dd6-bf8f-ed5d2e3d7a2b" name="Verify HTTP Status is 200"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="34f26165-e874-4fee-b614-788a454eef9e" name="Verify the correct content of responce"><con:configuration><scriptText>def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+
+def holder = groovyUtils.getXmlHolder(messageExchange.responseContent)
+
+def twilAstBeg = holder.getNodeValue("//GeoIP/GeoAddr/TwilAstBeg")
+
+def sunSet = holder.getNodeValue("//GeoIP/GeoAddr/SunSet")
+
+def sunRise = holder.getNodeValue("//GeoIP/GeoAddr/SunRise")
+
+def lon = holder.getNodeValue("//GeoIP/GeoAddr/Lon")
+
+def lat = holder.getNodeValue("//GeoIP/GeoAddr/Lat")
+
+def town = holder.getNodeValue("//GeoIP/GeoAddr/Town")
+
+def twilNavBeg = holder.getNodeValue("//GeoIP/GeoAddr/TwilNavBeg")
+
+def tz = holder.getNodeValue("//GeoIP/GeoAddr/TZ")
+
+def twilCivEnd = holder.getNodeValue("//GeoIP/GeoAddr/TwilCivEnd")
+
+def region = holder.getNodeValue("//GeoIP/GeoAddr/Region")
+
+def twilAstEnd = holder.getNodeValue("//GeoIP/GeoAddr/TwilAstEnd")
+
+def country = holder.getNodeValue("//GeoIP/GeoAddr/Country")
+
+def moonRise = holder.getNodeValue("//GeoIP/GeoAddr/MoonRise")
+
+def twilCivBeg = holder.getNodeValue("//GeoIP/GeoAddr/TwilCivBeg")
+
+def twilNavEnd = holder.getNodeValue("//GeoIP/GeoAddr/TwilNavEnd")
+
+def moonPhase = holder.getNodeValue("//GeoIP/GeoAddr/MoonPhase")
+
+def moonSet = holder.getNodeValue("//GeoIP/GeoAddr/MoonSet")
+
+
+assert twilAstBeg == '04:23:27'
+
+assert sunSet == '19:20:60'
+
+assert sunRise == '06:51:09'
+
+assert lon == '30.315784'
+
+assert lat == '59.939037'
+
+assert town == 'Санкт-Петербург'
+
+assert twilNavBeg == '05:19:24'
+
+assert tz == '3'
+
+assert twilCivEnd == '20:02:34'
+
+assert region == 'Санкт-Петербург'
+
+assert twilAstEnd == '21:49:43'
+
+assert country == 'Россия'
+
+assert moonRise == '05:13:40'
+
+assert twilCivBeg == '06:09:27'
+
+assert twilNavEnd == '20:53:20'
+
+assert moonPhase == '4'
+
+assert moonSet == '13:10:33'</scriptText></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="ss" value="1"/>
+  <con:entry key="ab" value="1"/>
+  <con:entry key="ae" value="1"/>
+  <con:entry key="mr" value="1"/>
+  <con:entry key="ms" value="1"/>
+  <con:entry key="ip" value="46.243.177.41"/>
+  <con:entry key="fm" value="1"/>
+  <con:entry key="cn" value="1"/>
+  <con:entry key="tb" value="1"/>
+  <con:entry key="sid" value="6MGT65TA"/>
+  <con:entry key="te" value="1"/>
+  <con:entry key="hz" value="1"/>
+  <con:entry key="nb" value="1"/>
+  <con:entry key="rg" value="1"/>
+  <con:entry key="ne" value="1"/>
+  <con:entry key="tn" value="1"/>
+  <con:entry key="lg" value="1"/>
+  <con:entry key="sr" value="1"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="c4631594-7b24-436c-8362-b4eba24b49ec" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Get Data from Mini Service for current Location (Error 205)" searchProperties="true" timeout="0" maxResults="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Get Data from Mini Service for current Location (Error 205)" id="a6c020fa-845f-4185-bdfa-e9ffd3130f97"><con:settings/><con:config service="http://geoip.elib.ru" resourcePath="/cgi-bin/getdata_mini.pl?&amp;" methodName="Get Data from GeoIP Mini Service" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Data from Mini Service for current Location (Error 205)" id="031d3851-b87c-4efb-bb0d-642b354e4394" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://geoip.elib.ru</con:endpoint><con:request/><con:originalUri>http://geoip.elib.ru/cgi-bin/getdata_mini.pl</con:originalUri><con:assertion type="Simple Contains" id="2bb294b2-55a2-4405-ad74-4f09579e6993" name="Verify responce contains E10"><con:configuration><token>E10</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="7635439b-614a-4960-835f-d3e223ae2f1c" name="Verify HTTP Status Code is 200"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="dc8b002a-65aa-4485-b47e-465b7666eb9f" name="Verify 'Content-Encoding' equals 'gzip' in responce header"><con:configuration><scriptText>String contentEncodingValue = messageExchange.responseHeaders['Content-Encoding']
+
+assert contentEncodingValue == "[gzip]"</scriptText></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="sid" value="8R82HAOC"/>
+  <con:entry key="ip" value="46.243.177.41.555.63"/>
+</con:parameters><con:parameterOrder><con:entry>sid</con:entry><con:entry>ip</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="10a32ecc-5d2a-4456-a2d1-a639299b86d8" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Get Data from Mini Service by Rostov IP" searchProperties="true" timeout="0" maxResults="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Get Data from Mini Service by Rostov IP" id="598292bc-e837-47bf-adfa-1a5e51ebd57d"><con:settings/><con:config service="http://geoip.elib.ru" resourcePath="/cgi-bin/getdata_mini.pl?&amp;" methodName="Get Data from GeoIP Mini Service" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Data from Mini Service by Rostov IP" id="57b227cb-8546-430a-83d6-7462733f32c7" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://geoip.elib.ru</con:endpoint><con:request/><con:originalUri>http://geoip.elib.ru/cgi-bin/getdata_mini.pl</con:originalUri><con:assertion type="Simple Contains" id="baeaf40c-c4be-4f95-a865-b45028177a22" name="Verify the responce contains correct Town value"><con:configuration><token>Ростов-на-Дону</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="30277785-0ecf-409b-b5d5-7dac212e165c" name="Verify the responce contains correct Lon value"><con:configuration><token>47.233189</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="68dafc18-9707-49e3-8b80-4a8eac00e148" name="Verify the responce contains correct Lat value"><con:configuration><token>39.715</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="4e25bb47-1614-4628-8b0a-0d7d97188295" name="Verify 'Content-Encoding' equals 'gzip' in responce header"><con:configuration><scriptText>String contentEncodingValue = messageExchange.responseHeaders['Content-Encoding']
+
+assert contentEncodingValue == "[gzip]"</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="2e4d205e-9e6a-4756-a8e6-9d80aeed2f96" name="Verify HTTP Status Code is 200"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="sid" value="213QE3O5"/>
+  <con:entry key="ip" value="87.117.26.88 "/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="60916034-8ae1-4a41-948a-d9887d0bb703" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Get Error 10 from Mini Service for invalid IP" searchProperties="true" timeout="0" maxResults="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Get Data from Mini Service for current Location (Error 205)" id="cc3c6623-2e43-4246-a553-532404def88e"><con:settings/><con:config service="http://geoip.elib.ru" resourcePath="/cgi-bin/getdata_mini.pl?&amp;" methodName="Get Data from GeoIP Mini Service" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Data from Mini Service for current Location (Error 205)" id="031d3851-b87c-4efb-bb0d-642b354e4394" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://geoip.elib.ru</con:endpoint><con:request/><con:originalUri>http://geoip.elib.ru/cgi-bin/getdata_mini.pl</con:originalUri><con:assertion type="Simple Contains" id="2bb294b2-55a2-4405-ad74-4f09579e6993" name="Verify responce contains E205"><con:configuration><token>E205</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="7635439b-614a-4960-835f-d3e223ae2f1c" name="Verify HTTP Status Code is 200"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="dc8b002a-65aa-4485-b47e-465b7666eb9f" name="Verify 'Content-Encoding' equals 'gzip' in responce header"><con:configuration><scriptText>String contentEncodingValue = messageExchange.responseHeaders['Content-Encoding']
+
+assert contentEncodingValue == "[gzip]"</scriptText></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="ip" value=""/>
+  <con:entry key="sid" value="8R82HAOC"/>
+</con:parameters><con:parameterOrder><con:entry>sid</con:entry><con:entry>ip</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:savedRecentRuns>1</con:savedRecentRuns><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting><con:authRepository/><con:tags/><con:sensitiveInformation/></con:soapui-project>
