@@ -1,0 +1,93 @@
+01:19:42,875 [BDD_SpecFlow.BaseFactories] ERROR - [Given Cart is empty] step is failed
+OpenQA.Selenium.NoSuchElementException: Could not find element by: By.XPath: .//*[@id='gh-cart-i']
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at BDD_SpecFlow.PageObjects.Header.OpenToCartPage() in d:\ATMentoring_Tasks_Repositories\Task 6.1\BDD_SpecFlow\BDD_SpecFlow\PageObjects\Header.cs:line 47
+   at BDD_SpecFlow.StepDefinitions.BackGroundSteps.GivenCartIsEmpty() in d:\ATMentoring_Tasks_Repositories\Task 6.1\BDD_SpecFlow\BDD_SpecFlow\StepDefinitions\BackGroundSteps.cs:line 39
+01:20:13,140 [BDD_SpecFlow.BaseFactories] ERROR - [Given Watch list is empty] step is failed
+OpenQA.Selenium.NoSuchElementException: Could not find element by: By.XPath: .//*[@id='gh-eb-My-o']//a[@href='http://www.ebay.com/myb/WatchList']
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.Internal.IWrapsElement.get_WrappedElement()
+   at OpenQA.Selenium.Remote.RemoteWebDriver.ConvertObjectToJavaScriptObject(Object arg)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.ConvertArgumentsToJavaScriptObjects(Object[] args)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.ExecuteScriptCommand(String script, String commandName, Object[] args)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.ExecuteScript(String script, Object[] args)
+   at BDD_SpecFlow.PageObjects.Header.OpenToWatchPage() in d:\ATMentoring_Tasks_Repositories\Task 6.1\BDD_SpecFlow\BDD_SpecFlow\PageObjects\Header.cs:line 41
+   at BDD_SpecFlow.StepDefinitions.BackGroundSteps.GivenWatchListIsEmpty() in d:\ATMentoring_Tasks_Repositories\Task 6.1\BDD_SpecFlow\BDD_SpecFlow\StepDefinitions\BackGroundSteps.cs:line 64
+01:21:13,390 [BDD_SpecFlow.BaseFactories] ERROR - [Given I navigate to the Item page for the FirstItem] step is failed
+OpenQA.Selenium.NoSuchElementException: Could not find element by: By.XPath: .//*[@id='gh-ac']
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.SendKeys(String text)
+   at BDD_SpecFlow.HomePage.SearchByKeys(String searchKey) in d:\ATMentoring_Tasks_Repositories\Task 6.1\BDD_SpecFlow\BDD_SpecFlow\PageObjects\HomePage.cs:line 25
+   at BDD_SpecFlow.StepDefinitions.SearchresultsPageSteps.GivenINavigateTheItemPageForTheFirstItem() in d:\ATMentoring_Tasks_Repositories\Task 6.1\BDD_SpecFlow\BDD_SpecFlow\StepDefinitions\SearchresultsPageSteps.cs:line 18
+01:21:44,677 [BDD_SpecFlow.BaseFactories] ERROR - [When I press Add To Cart button on the Item page] step is failed
+OpenQA.Selenium.NoSuchElementException: Could not find element by: By.Id: isCartBtn_btn
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at BDD_SpecFlow.ItemPage.AddToCartFromItemPage() in d:\ATMentoring_Tasks_Repositories\Task 6.1\BDD_SpecFlow\BDD_SpecFlow\PageObjects\ItemPage.cs:line 58
+   at BDD_SpecFlow.PageObjects.ItemPageSteps.WhenIPressAddToCartButtonOnTheItemPage() in d:\ATMentoring_Tasks_Repositories\Task 6.1\BDD_SpecFlow\BDD_SpecFlow\StepDefinitions\ItemPageSteps.cs:line 68
+01:22:14,938 [BDD_SpecFlow.BaseFactories] ERROR - [Then the Cart page should be opened] step is failed
+OpenQA.Selenium.NoSuchElementException: Could not find element by: By.XPath: .//*[@id='PageTitle']/h1[@class='mb15 nowrap']
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.get_Text()
+   at BDD_SpecFlow.CartPageSteps.ThenTheCartPageShouldBeOpened() in d:\ATMentoring_Tasks_Repositories\Task 6.1\BDD_SpecFlow\BDD_SpecFlow\StepDefinitions\CartPageSteps.cs:line 92
+01:22:45,151 [BDD_SpecFlow.BaseFactories] ERROR - [Then the FirstItem should be added to cart] step is failed
+System.Exception: Test FAILED
+   at BDD_SpecFlow.CartPageSteps.ThenTheFirstItemShouldBeAddedToCart() in d:\ATMentoring_Tasks_Repositories\Task 6.1\BDD_SpecFlow\BDD_SpecFlow\StepDefinitions\CartPageSteps.cs:line 75
+01:23:58,736 [BDD_SpecFlow.BaseFactories] ERROR - [Given Watch list is empty] step is failed
+OpenQA.Selenium.WebDriverException: The HTTP request to the remote WebDriver server for URL http://localhost:10269/session/e9ec07a219023a542bc81b9eca4cda2a/execute timed out after 60 seconds. ---> System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+   --- End of inner exception stack trace ---
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.ExecuteScriptCommand(String script, String commandName, Object[] args)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.ExecuteScript(String script, Object[] args)
+   at BDD_SpecFlow.PageObjects.Header.OpenToWatchPage() in d:\ATMentoring_Tasks_Repositories\Task 6.1\BDD_SpecFlow\BDD_SpecFlow\PageObjects\Header.cs:line 41
+   at BDD_SpecFlow.StepDefinitions.BackGroundSteps.GivenWatchListIsEmpty() in d:\ATMentoring_Tasks_Repositories\Task 6.1\BDD_SpecFlow\BDD_SpecFlow\StepDefinitions\BackGroundSteps.cs:line 64
+01:31:18,764 [BDD_SpecFlow.BaseFactories] ERROR - [Given I navigate to the Item page for the SecondItem] step is failed
+OpenQA.Selenium.NoSuchElementException: Could not find element by: By.XPath: .//*[@id='item1c688bd842']//img[@src='http://thumbs.ebaystatic.com/images/g/rU8AAOSwbYZXXMpq/s-l225.jpg']
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at BDD_SpecFlow.SearchResultsPage.OpenScarfItemPage() in d:\ATMentoring_Tasks_Repositories\Task 6.1\BDD_SpecFlow\BDD_SpecFlow\PageObjects\SearchResultsPage.cs:line 36
+   at BDD_SpecFlow.StepDefinitions.SearchresultsPageSteps.GivenINavigateToTheItemPageForTheSecondItem() in d:\ATMentoring_Tasks_Repositories\Task 6.1\BDD_SpecFlow\BDD_SpecFlow\StepDefinitions\SearchresultsPageSteps.cs:line 36
+01:31:48,998 [BDD_SpecFlow.BaseFactories] ERROR - [When I press Add To Cart button on the Item page] step is failed
+OpenQA.Selenium.NoSuchElementException: Could not find element by: By.Id: isCartBtn_btn
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at BDD_SpecFlow.ItemPage.AddToCartFromItemPage() in d:\ATMentoring_Tasks_Repositories\Task 6.1\BDD_SpecFlow\BDD_SpecFlow\PageObjects\ItemPage.cs:line 58
+   at BDD_SpecFlow.PageObjects.ItemPageSteps.WhenIPressAddToCartButtonOnTheItemPage() in d:\ATMentoring_Tasks_Repositories\Task 6.1\BDD_SpecFlow\BDD_SpecFlow\StepDefinitions\ItemPageSteps.cs:line 68
+01:32:20,283 [BDD_SpecFlow.BaseFactories] ERROR - [Then the Cart page should be opened] step is failed
+OpenQA.Selenium.NoSuchElementException: Could not find element by: By.XPath: .//*[@id='PageTitle']/h1[@class='mb15 nowrap']
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.get_Text()
+   at BDD_SpecFlow.CartPageSteps.ThenTheCartPageShouldBeOpened() in d:\ATMentoring_Tasks_Repositories\Task 6.1\BDD_SpecFlow\BDD_SpecFlow\StepDefinitions\CartPageSteps.cs:line 92
+01:32:50,553 [BDD_SpecFlow.BaseFactories] ERROR - [Then the SecondItem should be added to cart] step is failed
+System.Exception: Test FAILED
+   at BDD_SpecFlow.CartPageSteps.ThenTheSecondItemShouldBeAddedToCart() in d:\ATMentoring_Tasks_Repositories\Task 6.1\BDD_SpecFlow\BDD_SpecFlow\StepDefinitions\CartPageSteps.cs:line 50
