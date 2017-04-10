@@ -11,7 +11,7 @@ namespace BDD_SpecFlow.Utils
         {
             Screenshot source = ((ITakesScreenshot)driver).GetScreenshot();
             string fileName = DateTime.Now.ToString("yyyy-MM-dd hh_mm_ss") + ".png";
-            string screenshotPath = Path.Combine(Environment.CurrentDirectory, @"Screenshots\", fileName);
+            string screenshotPath = Path.Combine(Environment.CurrentDirectory, @"BDD_SpecFlow\Screenshots\", fileName);
             try
             {
 
@@ -23,7 +23,7 @@ namespace BDD_SpecFlow.Utils
                 logger.Error("Screenshot is not created", ex);
             }
 
-            logger.Info("Screenshot is saved in the ../../../Screenshots");
+            logger.Info("Screenshot is saved in the ../../Screenshots");
 
         }
         
